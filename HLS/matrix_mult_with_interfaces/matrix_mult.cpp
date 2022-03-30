@@ -12,6 +12,7 @@ void mmult_hw(T a[DIM][DIM], T b[DIM][DIM], T out[DIM][DIM])
 {
 
 	int const FACTOR = DIM/2;
+#pragma HLS INLINE
 #pragma HLS array_partition variable=a block factor=FACTOR dim=2
 #pragma HLS array_partition variable=b block factor=FACTOR dim=1
 
@@ -69,7 +70,6 @@ void mmult_wrapper(hls::stream<t_packet> &input_stream,
 			t_packet tmp;
 			tmp.data = out[i][j];
 			tmp.last = (i == DIM-1) && (j == DIM-1);
-			tmp.keep = -1;
 			output_stream << tmp;
 
 		}

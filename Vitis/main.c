@@ -248,7 +248,7 @@ int main()
 				err++;
 		}
 	if (err == 0)
-		printf("Matrixes identical ... Test successful!\r\n");
+		printf("Matrices identical ... Test successful!\r\n");
 	else
 		printf("Test failed!\r\n");
 
