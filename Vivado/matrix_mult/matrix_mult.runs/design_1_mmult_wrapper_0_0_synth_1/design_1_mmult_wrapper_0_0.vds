@@ -1,0 +1,955 @@
+#-----------------------------------------------------------
+# Vivado v2020.2.2 (64-bit)
+# SW Build 3118627 on Tue Feb  9 05:13:49 MST 2021
+# IP Build 3115676 on Tue Feb  9 10:48:11 MST 2021
+# Start of session at: Fri Mar 18 22:16:42 2022
+# Process ID: 1314635
+# Current directory: /home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.runs/design_1_mmult_wrapper_0_0_synth_1
+# Command line: vivado -log design_1_mmult_wrapper_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_mmult_wrapper_0_0.tcl
+# Log file: /home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.runs/design_1_mmult_wrapper_0_0_synth_1/design_1_mmult_wrapper_0_0.vds
+# Journal file: /home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.runs/design_1_mmult_wrapper_0_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source design_1_mmult_wrapper_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/daniel/Documents/ctm_openday/HLS/matrix_mult_from_scratch'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/eda/Xilinx/Vivado/2020.2/data/ip'.
+Command: synth_design -top design_1_mmult_wrapper_0_0 -part xczu3eg-sbva484-1-i -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu3eg'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu3eg'
+INFO: [Device 21-403] Loading part xczu3eg-sbva484-1-i
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 1315307
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:18 . Memory (MB): peak = 2635.000 ; gain = 30.691 ; free physical = 5141 ; free virtual = 63682
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_mmult_wrapper_0_0' [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ip/design_1_mmult_wrapper_0_0/synth/design_1_mmult_wrapper_0_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'mmult_wrapper' [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/3e98/hdl/verilog/mmult_wrapper.v:12]
+	Parameter ap_ST_fsm_state1 bound to: 9'b000000001 
+	Parameter ap_ST_fsm_state2 bound to: 9'b000000010 
+	Parameter ap_ST_fsm_state3 bound to: 9'b000000100 
+	Parameter ap_ST_fsm_state4 bound to: 9'b000001000 
+	Parameter ap_ST_fsm_state5 bound to: 9'b000010000 
+	Parameter ap_ST_fsm_pp2_stage0 bound to: 9'b000100000 
+	Parameter ap_ST_fsm_state332 bound to: 9'b001000000 
+	Parameter ap_ST_fsm_pp3_stage0 bound to: 9'b010000000 
+	Parameter ap_ST_fsm_state336 bound to: 9'b100000000 
+INFO: [Synth 8-6157] synthesizing module 'mmult_wrapper_a_0' [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/3e98/hdl/verilog/mmult_wrapper_a_0.v:47]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 128 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'mmult_wrapper_a_0_ram' [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/3e98/hdl/verilog/mmult_wrapper_a_0.v:6]
+	Parameter DWIDTH bound to: 32 - type: integer 
+	Parameter AWIDTH bound to: 7 - type: integer 
+	Parameter MEM_SIZE bound to: 128 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mmult_wrapper_a_0_ram' (1#1) [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/3e98/hdl/verilog/mmult_wrapper_a_0.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'mmult_wrapper_a_0' (2#1) [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/3e98/hdl/verilog/mmult_wrapper_a_0.v:47]
+INFO: [Synth 8-6157] synthesizing module 'mmult_wrapper_out' [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/3e98/hdl/verilog/mmult_wrapper_out.v:37]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 4096 - type: integer 
+	Parameter AddressWidth bound to: 12 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'mmult_wrapper_out_ram' [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/3e98/hdl/verilog/mmult_wrapper_out.v:6]
+	Parameter DWIDTH bound to: 32 - type: integer 
+	Parameter AWIDTH bound to: 12 - type: integer 
+	Parameter MEM_SIZE bound to: 4096 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mmult_wrapper_out_ram' (3#1) [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/3e98/hdl/verilog/mmult_wrapper_out.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'mmult_wrapper_out' (4#1) [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/3e98/hdl/verilog/mmult_wrapper_out.v:37]
+INFO: [Synth 8-6157] synthesizing module 'mmult_wrapper_fadd_32ns_32ns_32_5_full_dsp_1' [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/3e98/hdl/verilog/mmult_wrapper_fadd_32ns_32ns_32_5_full_dsp_1.v:8]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 5 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter din1_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'mmult_wrapper_ap_fadd_3_full_dsp_32' [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/3e98/hdl/ip/mmult_wrapper_ap_fadd_3_full_dsp_32.v:60]
+INFO: [Synth 8-6157] synthesizing module 'LUT1' [/eda/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:59374]
+INFO: [Synth 8-6155] done synthesizing module 'LUT1' (5#1) [/eda/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:59374]
+INFO: [Synth 8-6155] done synthesizing module 'mmult_wrapper_ap_fadd_3_full_dsp_32' (24#1) [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/3e98/hdl/ip/mmult_wrapper_ap_fadd_3_full_dsp_32.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'mmult_wrapper_fadd_32ns_32ns_32_5_full_dsp_1' (25#1) [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/3e98/hdl/verilog/mmult_wrapper_fadd_32ns_32ns_32_5_full_dsp_1.v:8]
+INFO: [Synth 8-6157] synthesizing module 'mmult_wrapper_fmul_32ns_32ns_32_4_max_dsp_1' [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/3e98/hdl/verilog/mmult_wrapper_fmul_32ns_32ns_32_4_max_dsp_1.v:8]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 4 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter din1_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'mmult_wrapper_ap_fmul_2_max_dsp_32' [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/3e98/hdl/ip/mmult_wrapper_ap_fmul_2_max_dsp_32.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'mmult_wrapper_ap_fmul_2_max_dsp_32' (33#1) [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/3e98/hdl/ip/mmult_wrapper_ap_fmul_2_max_dsp_32.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'mmult_wrapper_fmul_32ns_32ns_32_4_max_dsp_1' (34#1) [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/3e98/hdl/verilog/mmult_wrapper_fmul_32ns_32ns_32_4_max_dsp_1.v:8]
+INFO: [Synth 8-6157] synthesizing module 'mmult_wrapper_regslice_both' [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/3e98/hdl/verilog/mmult_wrapper_regslice_both.v:8]
+	Parameter DataWidth bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mmult_wrapper_regslice_both' (35#1) [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/3e98/hdl/verilog/mmult_wrapper_regslice_both.v:8]
+INFO: [Synth 8-6157] synthesizing module 'mmult_wrapper_regslice_both__parameterized0' [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/3e98/hdl/verilog/mmult_wrapper_regslice_both.v:8]
+	Parameter DataWidth bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mmult_wrapper_regslice_both__parameterized0' (35#1) [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/3e98/hdl/verilog/mmult_wrapper_regslice_both.v:8]
+INFO: [Synth 8-6157] synthesizing module 'mmult_wrapper_regslice_both__parameterized1' [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/3e98/hdl/verilog/mmult_wrapper_regslice_both.v:8]
+	Parameter DataWidth bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mmult_wrapper_regslice_both__parameterized1' (35#1) [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/3e98/hdl/verilog/mmult_wrapper_regslice_both.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'mmult_wrapper' (36#1) [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/3e98/hdl/verilog/mmult_wrapper.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_mmult_wrapper_0_0' (37#1) [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ip/design_1_mmult_wrapper_0_0/synth/design_1_mmult_wrapper_0_0.v:58]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:19 ; elapsed = 00:00:39 . Memory (MB): peak = 3040.098 ; gain = 435.789 ; free physical = 3771 ; free virtual = 62339
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:43 . Memory (MB): peak = 3054.938 ; gain = 450.629 ; free physical = 3900 ; free virtual = 62468
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:23 ; elapsed = 00:00:43 . Memory (MB): peak = 3054.938 ; gain = 450.629 ; free physical = 3904 ; free virtual = 62472
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 3425.184 ; gain = 6.000 ; free physical = 2636 ; free virtual = 61270
+INFO: [Netlist 29-17] Analyzing 7040 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 4 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ip/design_1_mmult_wrapper_0_0/constraints/mmult_wrapper_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ip/design_1_mmult_wrapper_0_0/constraints/mmult_wrapper_ooc.xdc] for cell 'inst'
+Parsing XDC File [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.runs/design_1_mmult_wrapper_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.runs/design_1_mmult_wrapper_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00.11 ; elapsed = 00:00:00.12 . Memory (MB): peak = 4201.266 ; gain = 0.000 ; free physical = 6201 ; free virtual = 64852
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 512 instances were transformed.
+  DSP48E1 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 320 instances
+  FDE => FDRE: 192 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:05 . Memory (MB): peak = 4289.266 ; gain = 88.000 ; free physical = 5968 ; free virtual = 64619
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:02:10 ; elapsed = 00:01:53 . Memory (MB): peak = 4289.266 ; gain = 1684.957 ; free physical = 6347 ; free virtual = 64998
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu3eg-sbva484-1-i
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:02:10 ; elapsed = 00:01:53 . Memory (MB): peak = 4289.266 ; gain = 1684.957 ; free physical = 6343 ; free virtual = 64995
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  /home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.runs/design_1_mmult_wrapper_0_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:02:10 ; elapsed = 00:01:53 . Memory (MB): peak = 4289.266 ; gain = 1684.957 ; free physical = 6343 ; free virtual = 64995
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-6904] The RAM "mmult_wrapper_a_0_ram:/ram0_reg" of size (depth=128 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-5779] Default cascade height of 2 will be used for BRAM '"mmult_wrapper_out_ram:/ram_reg"'.
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 18 for RAM "mmult_wrapper_out_ram:/ram_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 9 for RAM "mmult_wrapper_out_ram:/ram_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 5 for RAM "mmult_wrapper_out_ram:/ram_reg"
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:03:10 ; elapsed = 00:02:55 . Memory (MB): peak = 4289.266 ; gain = 1684.957 ; free physical = 10181 ; free virtual = 68829
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'mmult_wrapper_fadd_32ns_32ns_32_5_full_dsp_1:/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/SUB_DELAY' (delay__parameterized0) to 'mmult_wrapper_fadd_32ns_32ns_32_5_full_dsp_1:/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/SUB_ADD_IP_DELAY'
+INFO: [Synth 8-223] decloning instance 'mmult_wrapper_fadd_32ns_32ns_32_5_full_dsp_1:/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'mmult_wrapper_fadd_32ns_32ns_32_5_full_dsp_1:/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'mmult_wrapper_fadd_32ns_32ns_32_5_full_dsp_1:/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'mmult_wrapper_fadd_32ns_32ns_32_5_full_dsp_1:/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'mmult_wrapper_fmul_32ns_32ns_32_4_max_dsp_1:/mmult_wrapper_ap_fmul_2_max_dsp_32_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'mmult_wrapper_fmul_32ns_32ns_32_4_max_dsp_1:/mmult_wrapper_ap_fmul_2_max_dsp_32_u/inst/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'mmult_wrapper_fmul_32ns_32ns_32_4_max_dsp_1:/mmult_wrapper_ap_fmul_2_max_dsp_32_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'mmult_wrapper_fmul_32ns_32ns_32_4_max_dsp_1:/mmult_wrapper_ap_fmul_2_max_dsp_32_u/inst/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/regslice_both_output_stream_V_user_V_U' (mmult_wrapper_regslice_both__parameterized1) to 'inst/regslice_both_output_stream_V_id_V_U'
+INFO: [Synth 8-223] decloning instance 'inst/regslice_both_output_stream_V_user_V_U' (mmult_wrapper_regslice_both__parameterized1) to 'inst/regslice_both_output_stream_V_dest_V_U'
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 360 (col length:72)
+BRAMs: 432 (col length: RAMB18 72 RAMB36 36)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3936] Found unconnected internal register 'ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/EXP_OFF.LRG_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '9' to '8' bits. [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/7468/hdl/xbip_pipe_v3_0_vh_rfs.vhd:368]
+INFO: [Synth 8-3936] Found unconnected internal register 'ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/EXP_OFF.LRG_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '9' to '8' bits. [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/7468/hdl/xbip_pipe_v3_0_vh_rfs.vhd:368]
+INFO: [Synth 8-3936] Found unconnected internal register 'ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/EXP_OFF.LRG_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '9' to '8' bits. [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/7468/hdl/xbip_pipe_v3_0_vh_rfs.vhd:368]
+INFO: [Synth 8-4471] merging register 'fadd_32ns_32ns_32_5_full_dsp_1_U41/ce_r_reg' into 'fadd_32ns_32ns_32_5_full_dsp_1_U40/ce_r_reg' [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/3e98/hdl/verilog/mmult_wrapper_fadd_32ns_32ns_32_5_full_dsp_1.v:50]
+INFO: [Synth 8-4471] merging register 'fadd_32ns_32ns_32_5_full_dsp_1_U42/ce_r_reg' into 'fadd_32ns_32ns_32_5_full_dsp_1_U40/ce_r_reg' [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/3e98/hdl/verilog/mmult_wrapper_fadd_32ns_32ns_32_5_full_dsp_1.v:50]
+INFO: [Synth 8-4471] merging register 'fmul_32ns_32ns_32_4_max_dsp_1_U99/ce_r_reg' into 'fadd_32ns_32ns_32_5_full_dsp_1_U40/ce_r_reg' [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/3e98/hdl/verilog/mmult_wrapper_fmul_32ns_32ns_32_4_max_dsp_1.v:50]
+INFO: [Synth 8-4471] merging register 'fmul_32ns_32ns_32_4_max_dsp_1_U100/ce_r_reg' into 'fadd_32ns_32ns_32_5_full_dsp_1_U40/ce_r_reg' [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/3e98/hdl/verilog/mmult_wrapper_fmul_32ns_32ns_32_4_max_dsp_1.v:50]
+INFO: [Synth 8-4471] merging register 'fmul_32ns_32ns_32_4_max_dsp_1_U103/ce_r_reg' into 'fadd_32ns_32ns_32_5_full_dsp_1_U40/ce_r_reg' [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/3e98/hdl/verilog/mmult_wrapper_fmul_32ns_32ns_32_4_max_dsp_1.v:50]
+INFO: [Synth 8-4471] merging register 'fmul_32ns_32ns_32_4_max_dsp_1_U104/ce_r_reg' into 'fadd_32ns_32ns_32_5_full_dsp_1_U40/ce_r_reg' [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/3e98/hdl/verilog/mmult_wrapper_fmul_32ns_32ns_32_4_max_dsp_1.v:50]
+INFO: [Synth 8-4471] merging register 'fmul_32ns_32ns_32_4_max_dsp_1_U105/ce_r_reg' into 'fadd_32ns_32ns_32_5_full_dsp_1_U40/ce_r_reg' [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/3e98/hdl/verilog/mmult_wrapper_fmul_32ns_32ns_32_4_max_dsp_1.v:50]
+INFO: [Synth 8-4471] merging register 'fmul_32ns_32ns_32_4_max_dsp_1_U106/ce_r_reg' into 'fadd_32ns_32ns_32_5_full_dsp_1_U40/ce_r_reg' [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/3e98/hdl/verilog/mmult_wrapper_fmul_32ns_32ns_32_4_max_dsp_1.v:50]
+INFO: [Synth 8-4471] merging register 'fmul_32ns_32ns_32_4_max_dsp_1_U107/ce_r_reg' into 'fadd_32ns_32ns_32_5_full_dsp_1_U40/ce_r_reg' [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/3e98/hdl/verilog/mmult_wrapper_fmul_32ns_32ns_32_4_max_dsp_1.v:50]
+INFO: [Synth 8-4471] merging register 'fmul_32ns_32ns_32_4_max_dsp_1_U108/ce_r_reg' into 'fadd_32ns_32ns_32_5_full_dsp_1_U40/ce_r_reg' [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/3e98/hdl/verilog/mmult_wrapper_fmul_32ns_32ns_32_4_max_dsp_1.v:50]
+INFO: [Synth 8-4471] merging register 'fmul_32ns_32ns_32_4_max_dsp_1_U111/ce_r_reg' into 'fadd_32ns_32ns_32_5_full_dsp_1_U40/ce_r_reg' [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/3e98/hdl/verilog/mmult_wrapper_fmul_32ns_32ns_32_4_max_dsp_1.v:50]
+INFO: [Synth 8-4471] merging register 'fmul_32ns_32ns_32_4_max_dsp_1_U112/ce_r_reg' into 'fadd_32ns_32ns_32_5_full_dsp_1_U40/ce_r_reg' [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/3e98/hdl/verilog/mmult_wrapper_fmul_32ns_32ns_32_4_max_dsp_1.v:50]
+INFO: [Synth 8-4471] merging register 'fmul_32ns_32ns_32_4_max_dsp_1_U113/ce_r_reg' into 'fadd_32ns_32ns_32_5_full_dsp_1_U40/ce_r_reg' [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/3e98/hdl/verilog/mmult_wrapper_fmul_32ns_32ns_32_4_max_dsp_1.v:50]
+INFO: [Synth 8-4471] merging register 'fmul_32ns_32ns_32_4_max_dsp_1_U114/ce_r_reg' into 'fadd_32ns_32ns_32_5_full_dsp_1_U40/ce_r_reg' [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/3e98/hdl/verilog/mmult_wrapper_fmul_32ns_32ns_32_4_max_dsp_1.v:50]
+INFO: [Synth 8-6904] The RAM "mmult_wrapper__GB0/a_17_U/mmult_wrapper_a_0_ram_U/ram0_reg" of size (depth=128 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "mmult_wrapper__GB0/b_17_U/mmult_wrapper_a_0_ram_U/ram0_reg" of size (depth=128 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "mmult_wrapper__GB0/a_19_U/mmult_wrapper_a_0_ram_U/ram0_reg" of size (depth=128 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "mmult_wrapper__GB0/b_19_U/mmult_wrapper_a_0_ram_U/ram0_reg" of size (depth=128 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "mmult_wrapper__GB0/a_20_U/mmult_wrapper_a_0_ram_U/ram0_reg" of size (depth=128 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "mmult_wrapper__GB0/b_20_U/mmult_wrapper_a_0_ram_U/ram0_reg" of size (depth=128 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "mmult_wrapper__GB0/a_21_U/mmult_wrapper_a_0_ram_U/ram0_reg" of size (depth=128 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "mmult_wrapper__GB0/b_21_U/mmult_wrapper_a_0_ram_U/ram0_reg" of size (depth=128 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "mmult_wrapper__GB0/a_23_U/mmult_wrapper_a_0_ram_U/ram0_reg" of size (depth=128 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "mmult_wrapper__GB0/b_23_U/mmult_wrapper_a_0_ram_U/ram0_reg" of size (depth=128 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "mmult_wrapper__GB0/a_24_U/mmult_wrapper_a_0_ram_U/ram0_reg" of size (depth=128 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "mmult_wrapper__GB0/b_24_U/mmult_wrapper_a_0_ram_U/ram0_reg" of size (depth=128 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+WARNING: [Synth 8-7129] Port aresetn in module floating_point_v7_1_11_viv__parameterized1__12 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_a_tuser[0] in module floating_point_v7_1_11_viv__parameterized1__12 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_a_tlast in module floating_point_v7_1_11_viv__parameterized1__12 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tuser[0] in module floating_point_v7_1_11_viv__parameterized1__12 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tlast in module floating_point_v7_1_11_viv__parameterized1__12 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tvalid in module floating_point_v7_1_11_viv__parameterized1__12 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[31] in module floating_point_v7_1_11_viv__parameterized1__12 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[30] in module floating_point_v7_1_11_viv__parameterized1__12 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[29] in module floating_point_v7_1_11_viv__parameterized1__12 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[28] in module floating_point_v7_1_11_viv__parameterized1__12 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[27] in module floating_point_v7_1_11_viv__parameterized1__12 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[26] in module floating_point_v7_1_11_viv__parameterized1__12 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[25] in module floating_point_v7_1_11_viv__parameterized1__12 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[24] in module floating_point_v7_1_11_viv__parameterized1__12 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[23] in module floating_point_v7_1_11_viv__parameterized1__12 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[22] in module floating_point_v7_1_11_viv__parameterized1__12 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[21] in module floating_point_v7_1_11_viv__parameterized1__12 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[20] in module floating_point_v7_1_11_viv__parameterized1__12 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[19] in module floating_point_v7_1_11_viv__parameterized1__12 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[18] in module floating_point_v7_1_11_viv__parameterized1__12 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[17] in module floating_point_v7_1_11_viv__parameterized1__12 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[16] in module floating_point_v7_1_11_viv__parameterized1__12 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[15] in module floating_point_v7_1_11_viv__parameterized1__12 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[14] in module floating_point_v7_1_11_viv__parameterized1__12 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[13] in module floating_point_v7_1_11_viv__parameterized1__12 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[12] in module floating_point_v7_1_11_viv__parameterized1__12 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[11] in module floating_point_v7_1_11_viv__parameterized1__12 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[10] in module floating_point_v7_1_11_viv__parameterized1__12 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[9] in module floating_point_v7_1_11_viv__parameterized1__12 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[8] in module floating_point_v7_1_11_viv__parameterized1__12 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[7] in module floating_point_v7_1_11_viv__parameterized1__12 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[6] in module floating_point_v7_1_11_viv__parameterized1__12 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[5] in module floating_point_v7_1_11_viv__parameterized1__12 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[4] in module floating_point_v7_1_11_viv__parameterized1__12 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[3] in module floating_point_v7_1_11_viv__parameterized1__12 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[2] in module floating_point_v7_1_11_viv__parameterized1__12 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[1] in module floating_point_v7_1_11_viv__parameterized1__12 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[0] in module floating_point_v7_1_11_viv__parameterized1__12 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tuser[0] in module floating_point_v7_1_11_viv__parameterized1__12 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tlast in module floating_point_v7_1_11_viv__parameterized1__12 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_operation_tvalid in module floating_point_v7_1_11_viv__parameterized1__12 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_operation_tdata[7] in module floating_point_v7_1_11_viv__parameterized1__12 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_operation_tdata[6] in module floating_point_v7_1_11_viv__parameterized1__12 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_operation_tdata[5] in module floating_point_v7_1_11_viv__parameterized1__12 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_operation_tdata[4] in module floating_point_v7_1_11_viv__parameterized1__12 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_operation_tdata[3] in module floating_point_v7_1_11_viv__parameterized1__12 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_operation_tdata[2] in module floating_point_v7_1_11_viv__parameterized1__12 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_operation_tdata[1] in module floating_point_v7_1_11_viv__parameterized1__12 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_operation_tdata[0] in module floating_point_v7_1_11_viv__parameterized1__12 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_operation_tuser[0] in module floating_point_v7_1_11_viv__parameterized1__12 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_operation_tlast in module floating_point_v7_1_11_viv__parameterized1__12 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axis_result_tready in module floating_point_v7_1_11_viv__parameterized1__12 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aresetn in module floating_point_v7_1_11_viv__parameterized1__11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_a_tuser[0] in module floating_point_v7_1_11_viv__parameterized1__11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_a_tlast in module floating_point_v7_1_11_viv__parameterized1__11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tuser[0] in module floating_point_v7_1_11_viv__parameterized1__11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tlast in module floating_point_v7_1_11_viv__parameterized1__11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tvalid in module floating_point_v7_1_11_viv__parameterized1__11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[31] in module floating_point_v7_1_11_viv__parameterized1__11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[30] in module floating_point_v7_1_11_viv__parameterized1__11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[29] in module floating_point_v7_1_11_viv__parameterized1__11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[28] in module floating_point_v7_1_11_viv__parameterized1__11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[27] in module floating_point_v7_1_11_viv__parameterized1__11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[26] in module floating_point_v7_1_11_viv__parameterized1__11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[25] in module floating_point_v7_1_11_viv__parameterized1__11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[24] in module floating_point_v7_1_11_viv__parameterized1__11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[23] in module floating_point_v7_1_11_viv__parameterized1__11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[22] in module floating_point_v7_1_11_viv__parameterized1__11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[21] in module floating_point_v7_1_11_viv__parameterized1__11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[20] in module floating_point_v7_1_11_viv__parameterized1__11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[19] in module floating_point_v7_1_11_viv__parameterized1__11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[18] in module floating_point_v7_1_11_viv__parameterized1__11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[17] in module floating_point_v7_1_11_viv__parameterized1__11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[16] in module floating_point_v7_1_11_viv__parameterized1__11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[15] in module floating_point_v7_1_11_viv__parameterized1__11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[14] in module floating_point_v7_1_11_viv__parameterized1__11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[13] in module floating_point_v7_1_11_viv__parameterized1__11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[12] in module floating_point_v7_1_11_viv__parameterized1__11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[11] in module floating_point_v7_1_11_viv__parameterized1__11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[10] in module floating_point_v7_1_11_viv__parameterized1__11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[9] in module floating_point_v7_1_11_viv__parameterized1__11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[8] in module floating_point_v7_1_11_viv__parameterized1__11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[7] in module floating_point_v7_1_11_viv__parameterized1__11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[6] in module floating_point_v7_1_11_viv__parameterized1__11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[5] in module floating_point_v7_1_11_viv__parameterized1__11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[4] in module floating_point_v7_1_11_viv__parameterized1__11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[3] in module floating_point_v7_1_11_viv__parameterized1__11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[2] in module floating_point_v7_1_11_viv__parameterized1__11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[1] in module floating_point_v7_1_11_viv__parameterized1__11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[0] in module floating_point_v7_1_11_viv__parameterized1__11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tuser[0] in module floating_point_v7_1_11_viv__parameterized1__11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tlast in module floating_point_v7_1_11_viv__parameterized1__11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_operation_tvalid in module floating_point_v7_1_11_viv__parameterized1__11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_operation_tdata[7] in module floating_point_v7_1_11_viv__parameterized1__11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_operation_tdata[6] in module floating_point_v7_1_11_viv__parameterized1__11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_operation_tdata[5] in module floating_point_v7_1_11_viv__parameterized1__11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_operation_tdata[4] in module floating_point_v7_1_11_viv__parameterized1__11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_operation_tdata[3] in module floating_point_v7_1_11_viv__parameterized1__11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_operation_tdata[2] in module floating_point_v7_1_11_viv__parameterized1__11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_operation_tdata[1] in module floating_point_v7_1_11_viv__parameterized1__11 is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-6904] The RAM "mmult_wrapper__GB0/a_17_U/mmult_wrapper_a_0_ram_U/ram0_reg" of size (depth=128 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "mmult_wrapper__GB0/b_17_U/mmult_wrapper_a_0_ram_U/ram0_reg" of size (depth=128 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "mmult_wrapper__GB0/a_19_U/mmult_wrapper_a_0_ram_U/ram0_reg" of size (depth=128 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "mmult_wrapper__GB0/b_19_U/mmult_wrapper_a_0_ram_U/ram0_reg" of size (depth=128 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "mmult_wrapper__GB0/a_20_U/mmult_wrapper_a_0_ram_U/ram0_reg" of size (depth=128 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "mmult_wrapper__GB0/b_20_U/mmult_wrapper_a_0_ram_U/ram0_reg" of size (depth=128 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "mmult_wrapper__GB0/a_21_U/mmult_wrapper_a_0_ram_U/ram0_reg" of size (depth=128 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "mmult_wrapper__GB0/b_21_U/mmult_wrapper_a_0_ram_U/ram0_reg" of size (depth=128 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "mmult_wrapper__GB0/a_23_U/mmult_wrapper_a_0_ram_U/ram0_reg" of size (depth=128 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "mmult_wrapper__GB0/b_23_U/mmult_wrapper_a_0_ram_U/ram0_reg" of size (depth=128 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "mmult_wrapper__GB0/a_24_U/mmult_wrapper_a_0_ram_U/ram0_reg" of size (depth=128 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "mmult_wrapper__GB0/b_24_U/mmult_wrapper_a_0_ram_U/ram0_reg" of size (depth=128 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-3886] merging instance 'fadd_32ns_32ns_32_5_full_dsp_1_U40/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[8]' (FDE) to 'fadd_32ns_32ns_32_5_full_dsp_1_U40/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[9]'
+INFO: [Synth 8-3886] merging instance 'fadd_32ns_32ns_32_5_full_dsp_1_U41/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[8]' (FDE) to 'fadd_32ns_32ns_32_5_full_dsp_1_U41/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[9]'
+INFO: [Synth 8-3886] merging instance 'fadd_32ns_32ns_32_5_full_dsp_1_U42/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[8]' (FDE) to 'fadd_32ns_32ns_32_5_full_dsp_1_U42/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[9]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\fadd_32ns_32ns_32_5_full_dsp_1_U40/ce_r_reg )
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_11_viv__1.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_11_viv__1.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_11_viv__2.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_11_viv__2.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_11_viv__3.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_11_viv__3.
+INFO: [Synth 8-3936] Found unconnected internal register 'ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/EXP_OFF.LRG_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '9' to '8' bits. [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/7468/hdl/xbip_pipe_v3_0_vh_rfs.vhd:368]
+INFO: [Synth 8-3936] Found unconnected internal register 'ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/EXP_OFF.LRG_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '9' to '8' bits. [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/7468/hdl/xbip_pipe_v3_0_vh_rfs.vhd:368]
+INFO: [Synth 8-3936] Found unconnected internal register 'ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/EXP_OFF.LRG_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '9' to '8' bits. [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/7468/hdl/xbip_pipe_v3_0_vh_rfs.vhd:368]
+INFO: [Synth 8-3936] Found unconnected internal register 'ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/EXP_OFF.LRG_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '9' to '8' bits. [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/7468/hdl/xbip_pipe_v3_0_vh_rfs.vhd:368]
+INFO: [Synth 8-4471] merging register 'fadd_32ns_32ns_32_5_full_dsp_1_U39/ce_r_reg' into 'fadd_32ns_32ns_32_5_full_dsp_1_U45/ce_r_reg' [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/3e98/hdl/verilog/mmult_wrapper_fadd_32ns_32ns_32_5_full_dsp_1.v:50]
+INFO: [Synth 8-4471] merging register 'fadd_32ns_32ns_32_5_full_dsp_1_U38/ce_r_reg' into 'fadd_32ns_32ns_32_5_full_dsp_1_U45/ce_r_reg' [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/3e98/hdl/verilog/mmult_wrapper_fadd_32ns_32ns_32_5_full_dsp_1.v:50]
+INFO: [Synth 8-4471] merging register 'fadd_32ns_32ns_32_5_full_dsp_1_U37/ce_r_reg' into 'fadd_32ns_32ns_32_5_full_dsp_1_U45/ce_r_reg' [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/3e98/hdl/verilog/mmult_wrapper_fadd_32ns_32ns_32_5_full_dsp_1.v:50]
+INFO: [Synth 8-3886] merging instance 'fadd_32ns_32ns_32_5_full_dsp_1_U37/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[8]' (FDE) to 'fadd_32ns_32ns_32_5_full_dsp_1_U37/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[9]'
+INFO: [Synth 8-3886] merging instance 'fadd_32ns_32ns_32_5_full_dsp_1_U38/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[8]' (FDE) to 'fadd_32ns_32ns_32_5_full_dsp_1_U38/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[9]'
+INFO: [Synth 8-3886] merging instance 'fadd_32ns_32ns_32_5_full_dsp_1_U39/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[8]' (FDE) to 'fadd_32ns_32ns_32_5_full_dsp_1_U39/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[9]'
+INFO: [Synth 8-3886] merging instance 'fadd_32ns_32ns_32_5_full_dsp_1_U45/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[8]' (FDE) to 'fadd_32ns_32ns_32_5_full_dsp_1_U45/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[9]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\fadd_32ns_32ns_32_5_full_dsp_1_U45/ce_r_reg )
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_11_viv__4.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_11_viv__4.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_11_viv__5.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_11_viv__5.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_11_viv__6.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_11_viv__6.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_11_viv__7.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_11_viv__7.
+INFO: [Synth 8-3936] Found unconnected internal register 'ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/EXP_OFF.LRG_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '9' to '8' bits. [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/7468/hdl/xbip_pipe_v3_0_vh_rfs.vhd:368]
+INFO: [Synth 8-3936] Found unconnected internal register 'ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/EXP_OFF.LRG_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '9' to '8' bits. [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/7468/hdl/xbip_pipe_v3_0_vh_rfs.vhd:368]
+INFO: [Synth 8-4471] merging register 'fadd_32ns_32ns_32_5_full_dsp_1_U35/ce_r_reg' into 'fadd_32ns_32ns_32_5_full_dsp_1_U36/ce_r_reg' [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/3e98/hdl/verilog/mmult_wrapper_fadd_32ns_32ns_32_5_full_dsp_1.v:50]
+INFO: [Synth 8-3886] merging instance 'fadd_32ns_32ns_32_5_full_dsp_1_U35/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[8]' (FDE) to 'fadd_32ns_32ns_32_5_full_dsp_1_U35/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[9]'
+INFO: [Synth 8-3886] merging instance 'fadd_32ns_32ns_32_5_full_dsp_1_U36/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[8]' (FDE) to 'fadd_32ns_32ns_32_5_full_dsp_1_U36/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[9]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\fadd_32ns_32ns_32_5_full_dsp_1_U36/ce_r_reg )
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_11_viv__8.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_11_viv__8.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_11_viv__9.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_11_viv__9.
+INFO: [Synth 8-3936] Found unconnected internal register 'ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/EXP_OFF.LRG_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '9' to '8' bits. [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/7468/hdl/xbip_pipe_v3_0_vh_rfs.vhd:368]
+INFO: [Synth 8-3936] Found unconnected internal register 'ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/EXP_OFF.LRG_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '9' to '8' bits. [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/7468/hdl/xbip_pipe_v3_0_vh_rfs.vhd:368]
+INFO: [Synth 8-4471] merging register 'fadd_32ns_32ns_32_5_full_dsp_1_U43/ce_r_reg' into 'fadd_32ns_32ns_32_5_full_dsp_1_U44/ce_r_reg' [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/3e98/hdl/verilog/mmult_wrapper_fadd_32ns_32ns_32_5_full_dsp_1.v:50]
+INFO: [Synth 8-3886] merging instance 'fadd_32ns_32ns_32_5_full_dsp_1_U43/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[8]' (FDE) to 'fadd_32ns_32ns_32_5_full_dsp_1_U43/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[9]'
+INFO: [Synth 8-3886] merging instance 'fadd_32ns_32ns_32_5_full_dsp_1_U44/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[8]' (FDE) to 'fadd_32ns_32ns_32_5_full_dsp_1_U44/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[9]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\fadd_32ns_32ns_32_5_full_dsp_1_U44/ce_r_reg )
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_11_viv__10.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_11_viv__10.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_11_viv__11.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_11_viv__11.
+INFO: [Synth 8-4471] merging register 'fmul_32ns_32ns_32_4_max_dsp_1_U109/ce_r_reg' into 'fmul_32ns_32ns_32_4_max_dsp_1_U110/ce_r_reg' [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/3e98/hdl/verilog/mmult_wrapper_fmul_32ns_32ns_32_4_max_dsp_1.v:50]
+INFO: [Synth 8-4471] merging register 'fmul_32ns_32ns_32_4_max_dsp_1_U102/ce_r_reg' into 'fmul_32ns_32ns_32_4_max_dsp_1_U110/ce_r_reg' [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/3e98/hdl/verilog/mmult_wrapper_fmul_32ns_32ns_32_4_max_dsp_1.v:50]
+INFO: [Synth 8-4471] merging register 'fmul_32ns_32ns_32_4_max_dsp_1_U101/ce_r_reg' into 'fmul_32ns_32ns_32_4_max_dsp_1_U110/ce_r_reg' [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/3e98/hdl/verilog/mmult_wrapper_fmul_32ns_32ns_32_4_max_dsp_1.v:50]
+INFO: [Synth 8-6904] The RAM "mmult_wrapper__GB4/a_22_U/mmult_wrapper_a_0_ram_U/ram0_reg" of size (depth=128 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "mmult_wrapper__GB4/b_22_U/mmult_wrapper_a_0_ram_U/ram0_reg" of size (depth=128 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "mmult_wrapper__GB4/a_18_U/mmult_wrapper_a_0_ram_U/ram0_reg" of size (depth=128 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "mmult_wrapper__GB4/b_18_U/mmult_wrapper_a_0_ram_U/ram0_reg" of size (depth=128 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "mmult_wrapper__GB4/a_22_U/mmult_wrapper_a_0_ram_U/ram0_reg" of size (depth=128 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "mmult_wrapper__GB4/b_22_U/mmult_wrapper_a_0_ram_U/ram0_reg" of size (depth=128 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "mmult_wrapper__GB4/a_18_U/mmult_wrapper_a_0_ram_U/ram0_reg" of size (depth=128 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "mmult_wrapper__GB4/b_18_U/mmult_wrapper_a_0_ram_U/ram0_reg" of size (depth=128 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\fmul_32ns_32ns_32_4_max_dsp_1_U110/ce_r_reg )
+INFO: [Synth 8-3936] Found unconnected internal register 'ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/EXP_OFF.LRG_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '9' to '8' bits. [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/7468/hdl/xbip_pipe_v3_0_vh_rfs.vhd:368]
+INFO: [Synth 8-3936] Found unconnected internal register 'ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/EXP_OFF.LRG_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '9' to '8' bits. [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/7468/hdl/xbip_pipe_v3_0_vh_rfs.vhd:368]
+INFO: [Synth 8-4471] merging register 'fmul_32ns_32ns_32_4_max_dsp_1_U119/ce_r_reg' into 'fmul_32ns_32ns_32_4_max_dsp_1_U120/ce_r_reg' [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/3e98/hdl/verilog/mmult_wrapper_fmul_32ns_32ns_32_4_max_dsp_1.v:50]
+INFO: [Synth 8-4471] merging register 'fmul_32ns_32ns_32_4_max_dsp_1_U116/ce_r_reg' into 'fmul_32ns_32ns_32_4_max_dsp_1_U120/ce_r_reg' [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/3e98/hdl/verilog/mmult_wrapper_fmul_32ns_32ns_32_4_max_dsp_1.v:50]
+INFO: [Synth 8-4471] merging register 'fmul_32ns_32ns_32_4_max_dsp_1_U115/ce_r_reg' into 'fmul_32ns_32ns_32_4_max_dsp_1_U120/ce_r_reg' [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/3e98/hdl/verilog/mmult_wrapper_fmul_32ns_32ns_32_4_max_dsp_1.v:50]
+INFO: [Synth 8-4471] merging register 'fadd_32ns_32ns_32_5_full_dsp_1_U56/ce_r_reg' into 'fmul_32ns_32ns_32_4_max_dsp_1_U120/ce_r_reg' [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/3e98/hdl/verilog/mmult_wrapper_fadd_32ns_32ns_32_5_full_dsp_1.v:50]
+INFO: [Synth 8-4471] merging register 'fadd_32ns_32ns_32_5_full_dsp_1_U55/ce_r_reg' into 'fmul_32ns_32ns_32_4_max_dsp_1_U120/ce_r_reg' [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/3e98/hdl/verilog/mmult_wrapper_fadd_32ns_32ns_32_5_full_dsp_1.v:50]
+INFO: [Synth 8-6904] The RAM "mmult_wrapper__GB5/a_27_U/mmult_wrapper_a_0_ram_U/ram0_reg" of size (depth=128 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "mmult_wrapper__GB5/b_27_U/mmult_wrapper_a_0_ram_U/ram0_reg" of size (depth=128 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "mmult_wrapper__GB5/a_25_U/mmult_wrapper_a_0_ram_U/ram0_reg" of size (depth=128 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "mmult_wrapper__GB5/b_25_U/mmult_wrapper_a_0_ram_U/ram0_reg" of size (depth=128 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "mmult_wrapper__GB5/a_27_U/mmult_wrapper_a_0_ram_U/ram0_reg" of size (depth=128 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "mmult_wrapper__GB5/b_27_U/mmult_wrapper_a_0_ram_U/ram0_reg" of size (depth=128 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "mmult_wrapper__GB5/a_25_U/mmult_wrapper_a_0_ram_U/ram0_reg" of size (depth=128 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "mmult_wrapper__GB5/b_25_U/mmult_wrapper_a_0_ram_U/ram0_reg" of size (depth=128 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-3886] merging instance 'fadd_32ns_32ns_32_5_full_dsp_1_U55/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[8]' (FDE) to 'fadd_32ns_32ns_32_5_full_dsp_1_U55/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[9]'
+INFO: [Synth 8-3886] merging instance 'fadd_32ns_32ns_32_5_full_dsp_1_U56/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[8]' (FDE) to 'fadd_32ns_32ns_32_5_full_dsp_1_U56/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[9]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\fmul_32ns_32ns_32_4_max_dsp_1_U120/ce_r_reg )
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_11_viv__12.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_11_viv__12.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_11_viv__13.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_11_viv__13.
+INFO: [Synth 8-3936] Found unconnected internal register 'ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/EXP_OFF.LRG_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '9' to '8' bits. [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/7468/hdl/xbip_pipe_v3_0_vh_rfs.vhd:368]
+INFO: [Synth 8-3936] Found unconnected internal register 'ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/EXP_OFF.LRG_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '9' to '8' bits. [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/7468/hdl/xbip_pipe_v3_0_vh_rfs.vhd:368]
+INFO: [Synth 8-4471] merging register 'fadd_32ns_32ns_32_5_full_dsp_1_U54/ce_r_reg' into 'fadd_32ns_32ns_32_5_full_dsp_1_U53/ce_r_reg' [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/3e98/hdl/verilog/mmult_wrapper_fadd_32ns_32ns_32_5_full_dsp_1.v:50]
+INFO: [Synth 8-4471] merging register 'fmul_32ns_32ns_32_4_max_dsp_1_U117/ce_r_reg' into 'fadd_32ns_32ns_32_5_full_dsp_1_U53/ce_r_reg' [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/3e98/hdl/verilog/mmult_wrapper_fmul_32ns_32ns_32_4_max_dsp_1.v:50]
+INFO: [Synth 8-4471] merging register 'fmul_32ns_32ns_32_4_max_dsp_1_U118/ce_r_reg' into 'fadd_32ns_32ns_32_5_full_dsp_1_U53/ce_r_reg' [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/3e98/hdl/verilog/mmult_wrapper_fmul_32ns_32ns_32_4_max_dsp_1.v:50]
+INFO: [Synth 8-6904] The RAM "mmult_wrapper__GB6/a_26_U/mmult_wrapper_a_0_ram_U/ram0_reg" of size (depth=128 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "mmult_wrapper__GB6/b_26_U/mmult_wrapper_a_0_ram_U/ram0_reg" of size (depth=128 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "mmult_wrapper__GB6/a_26_U/mmult_wrapper_a_0_ram_U/ram0_reg" of size (depth=128 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "mmult_wrapper__GB6/b_26_U/mmult_wrapper_a_0_ram_U/ram0_reg" of size (depth=128 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-3886] merging instance 'fadd_32ns_32ns_32_5_full_dsp_1_U53/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[8]' (FDE) to 'fadd_32ns_32ns_32_5_full_dsp_1_U53/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[9]'
+INFO: [Synth 8-3886] merging instance 'fadd_32ns_32ns_32_5_full_dsp_1_U54/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[8]' (FDE) to 'fadd_32ns_32ns_32_5_full_dsp_1_U54/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[9]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\fadd_32ns_32ns_32_5_full_dsp_1_U53/ce_r_reg )
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_11_viv__14.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_11_viv__14.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_11_viv__15.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_11_viv__15.
+INFO: [Synth 8-3936] Found unconnected internal register 'ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/EXP_OFF.LRG_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '9' to '8' bits. [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/7468/hdl/xbip_pipe_v3_0_vh_rfs.vhd:368]
+INFO: [Synth 8-3936] Found unconnected internal register 'ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/EXP_OFF.LRG_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '9' to '8' bits. [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/7468/hdl/xbip_pipe_v3_0_vh_rfs.vhd:368]
+INFO: [Synth 8-4471] merging register 'fadd_32ns_32ns_32_5_full_dsp_1_U51/ce_r_reg' into 'fadd_32ns_32ns_32_5_full_dsp_1_U52/ce_r_reg' [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/3e98/hdl/verilog/mmult_wrapper_fadd_32ns_32ns_32_5_full_dsp_1.v:50]
+INFO: [Synth 8-3886] merging instance 'fadd_32ns_32ns_32_5_full_dsp_1_U51/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[8]' (FDE) to 'fadd_32ns_32ns_32_5_full_dsp_1_U51/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[9]'
+INFO: [Synth 8-3886] merging instance 'fadd_32ns_32ns_32_5_full_dsp_1_U52/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[8]' (FDE) to 'fadd_32ns_32ns_32_5_full_dsp_1_U52/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[9]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\fadd_32ns_32ns_32_5_full_dsp_1_U52/ce_r_reg )
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_11_viv__16.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_11_viv__16.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_11_viv__17.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_11_viv__17.
+INFO: [Synth 8-3936] Found unconnected internal register 'ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/EXP_OFF.LRG_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '9' to '8' bits. [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/7468/hdl/xbip_pipe_v3_0_vh_rfs.vhd:368]
+INFO: [Synth 8-3936] Found unconnected internal register 'ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/EXP_OFF.LRG_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '9' to '8' bits. [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/7468/hdl/xbip_pipe_v3_0_vh_rfs.vhd:368]
+INFO: [Synth 8-3936] Found unconnected internal register 'ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/EXP_OFF.LRG_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '9' to '8' bits. [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/7468/hdl/xbip_pipe_v3_0_vh_rfs.vhd:368]
+INFO: [Synth 8-4471] merging register 'fadd_32ns_32ns_32_5_full_dsp_1_U49/ce_r_reg' into 'fadd_32ns_32ns_32_5_full_dsp_1_U48/ce_r_reg' [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/3e98/hdl/verilog/mmult_wrapper_fadd_32ns_32ns_32_5_full_dsp_1.v:50]
+INFO: [Synth 8-4471] merging register 'fadd_32ns_32ns_32_5_full_dsp_1_U50/ce_r_reg' into 'fadd_32ns_32ns_32_5_full_dsp_1_U48/ce_r_reg' [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/3e98/hdl/verilog/mmult_wrapper_fadd_32ns_32ns_32_5_full_dsp_1.v:50]
+INFO: [Synth 8-3886] merging instance 'fadd_32ns_32ns_32_5_full_dsp_1_U48/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[8]' (FDE) to 'fadd_32ns_32ns_32_5_full_dsp_1_U48/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[9]'
+INFO: [Synth 8-3886] merging instance 'fadd_32ns_32ns_32_5_full_dsp_1_U49/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[8]' (FDE) to 'fadd_32ns_32ns_32_5_full_dsp_1_U49/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[9]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\regslice_both_output_stream_V_user_V_U/B_V_data_1_payload_B_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\regslice_both_output_stream_V_user_V_U/B_V_data_1_payload_A_reg[0] )
+INFO: [Synth 8-3886] merging instance 'regslice_both_output_stream_V_strb_V_U/B_V_data_1_payload_B_reg[0]' (FDE) to 'regslice_both_output_stream_V_strb_V_U/B_V_data_1_payload_B_reg[3]'
+INFO: [Synth 8-3886] merging instance 'regslice_both_output_stream_V_strb_V_U/B_V_data_1_payload_A_reg[0]' (FDE) to 'regslice_both_output_stream_V_strb_V_U/B_V_data_1_payload_A_reg[3]'
+INFO: [Synth 8-3886] merging instance 'regslice_both_output_stream_V_strb_V_U/B_V_data_1_payload_B_reg[1]' (FDE) to 'regslice_both_output_stream_V_strb_V_U/B_V_data_1_payload_B_reg[3]'
+INFO: [Synth 8-3886] merging instance 'regslice_both_output_stream_V_strb_V_U/B_V_data_1_payload_A_reg[1]' (FDE) to 'regslice_both_output_stream_V_strb_V_U/B_V_data_1_payload_A_reg[3]'
+INFO: [Synth 8-3886] merging instance 'regslice_both_output_stream_V_strb_V_U/B_V_data_1_payload_B_reg[2]' (FDE) to 'regslice_both_output_stream_V_strb_V_U/B_V_data_1_payload_B_reg[3]'
+INFO: [Synth 8-3886] merging instance 'regslice_both_output_stream_V_strb_V_U/B_V_data_1_payload_A_reg[2]' (FDE) to 'regslice_both_output_stream_V_strb_V_U/B_V_data_1_payload_A_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\regslice_both_output_stream_V_strb_V_U/B_V_data_1_payload_B_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\regslice_both_output_stream_V_strb_V_U/B_V_data_1_payload_A_reg[3] )
+INFO: [Synth 8-3886] merging instance 'regslice_both_output_stream_V_keep_V_U/B_V_data_1_payload_B_reg[0]' (FDE) to 'regslice_both_output_stream_V_keep_V_U/B_V_data_1_payload_B_reg[1]'
+INFO: [Synth 8-3886] merging instance 'regslice_both_output_stream_V_keep_V_U/B_V_data_1_payload_A_reg[0]' (FDE) to 'regslice_both_output_stream_V_keep_V_U/B_V_data_1_payload_A_reg[1]'
+INFO: [Synth 8-3886] merging instance 'regslice_both_output_stream_V_keep_V_U/B_V_data_1_payload_B_reg[1]' (FDE) to 'regslice_both_output_stream_V_keep_V_U/B_V_data_1_payload_B_reg[2]'
+INFO: [Synth 8-3886] merging instance 'regslice_both_output_stream_V_keep_V_U/B_V_data_1_payload_A_reg[1]' (FDE) to 'regslice_both_output_stream_V_keep_V_U/B_V_data_1_payload_A_reg[2]'
+INFO: [Synth 8-3886] merging instance 'regslice_both_output_stream_V_keep_V_U/B_V_data_1_payload_B_reg[2]' (FDE) to 'regslice_both_output_stream_V_keep_V_U/B_V_data_1_payload_B_reg[3]'
+INFO: [Synth 8-3886] merging instance 'regslice_both_output_stream_V_keep_V_U/B_V_data_1_payload_A_reg[2]' (FDE) to 'regslice_both_output_stream_V_keep_V_U/B_V_data_1_payload_A_reg[3]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\regslice_both_output_stream_V_keep_V_U/B_V_data_1_payload_B_reg[3] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\regslice_both_output_stream_V_keep_V_U/B_V_data_1_payload_A_reg[3] )
+INFO: [Synth 8-3886] merging instance 'fadd_32ns_32ns_32_5_full_dsp_1_U50/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[8]' (FDE) to 'fadd_32ns_32ns_32_5_full_dsp_1_U50/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[9]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\fadd_32ns_32ns_32_5_full_dsp_1_U48/ce_r_reg )
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_11_viv__18.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_11_viv__18.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_11_viv__19.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_11_viv__19.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_11_viv__20.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_11_viv__20.
+INFO: [Synth 8-3936] Found unconnected internal register 'ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/EXP_OFF.LRG_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '9' to '8' bits. [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/7468/hdl/xbip_pipe_v3_0_vh_rfs.vhd:368]
+INFO: [Synth 8-3936] Found unconnected internal register 'ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/EXP_OFF.LRG_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '9' to '8' bits. [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/7468/hdl/xbip_pipe_v3_0_vh_rfs.vhd:368]
+INFO: [Synth 8-4471] merging register 'fadd_32ns_32ns_32_5_full_dsp_1_U46/ce_r_reg' into 'fadd_32ns_32ns_32_5_full_dsp_1_U47/ce_r_reg' [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/3e98/hdl/verilog/mmult_wrapper_fadd_32ns_32ns_32_5_full_dsp_1.v:50]
+INFO: [Synth 8-3886] merging instance 'fadd_32ns_32ns_32_5_full_dsp_1_U46/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[8]' (FDE) to 'fadd_32ns_32ns_32_5_full_dsp_1_U46/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[9]'
+INFO: [Synth 8-3886] merging instance 'fadd_32ns_32ns_32_5_full_dsp_1_U47/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[8]' (FDE) to 'fadd_32ns_32ns_32_5_full_dsp_1_U47/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[9]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\fadd_32ns_32ns_32_5_full_dsp_1_U47/ce_r_reg )
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_11_viv__21.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_11_viv__21.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_11_viv__22.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_11_viv__22.
+INFO: [Synth 8-3936] Found unconnected internal register 'ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/EXP_OFF.LRG_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '9' to '8' bits. [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/7468/hdl/xbip_pipe_v3_0_vh_rfs.vhd:368]
+INFO: [Synth 8-3936] Found unconnected internal register 'ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/EXP_OFF.LRG_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '9' to '8' bits. [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/7468/hdl/xbip_pipe_v3_0_vh_rfs.vhd:368]
+INFO: [Synth 8-3936] Found unconnected internal register 'ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/EXP_OFF.LRG_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '9' to '8' bits. [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/7468/hdl/xbip_pipe_v3_0_vh_rfs.vhd:368]
+INFO: [Synth 8-3936] Found unconnected internal register 'ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/EXP_OFF.LRG_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '9' to '8' bits. [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/7468/hdl/xbip_pipe_v3_0_vh_rfs.vhd:368]
+INFO: [Synth 8-3936] Found unconnected internal register 'ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/EXP_OFF.LRG_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '9' to '8' bits. [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/7468/hdl/xbip_pipe_v3_0_vh_rfs.vhd:368]
+INFO: [Synth 8-3936] Found unconnected internal register 'ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/EXP_OFF.LRG_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '9' to '8' bits. [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/7468/hdl/xbip_pipe_v3_0_vh_rfs.vhd:368]
+INFO: [Synth 8-3936] Found unconnected internal register 'ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/EXP_OFF.LRG_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '9' to '8' bits. [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/7468/hdl/xbip_pipe_v3_0_vh_rfs.vhd:368]
+INFO: [Synth 8-3936] Found unconnected internal register 'ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/EXP_OFF.LRG_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '9' to '8' bits. [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/7468/hdl/xbip_pipe_v3_0_vh_rfs.vhd:368]
+INFO: [Synth 8-4471] merging register 'fadd_32ns_32ns_32_5_full_dsp_1_U12/ce_r_reg' into 'fadd_32ns_32ns_32_5_full_dsp_1_U11/ce_r_reg' [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/3e98/hdl/verilog/mmult_wrapper_fadd_32ns_32ns_32_5_full_dsp_1.v:50]
+INFO: [Synth 8-4471] merging register 'fadd_32ns_32ns_32_5_full_dsp_1_U13/ce_r_reg' into 'fadd_32ns_32ns_32_5_full_dsp_1_U11/ce_r_reg' [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/3e98/hdl/verilog/mmult_wrapper_fadd_32ns_32ns_32_5_full_dsp_1.v:50]
+INFO: [Synth 8-4471] merging register 'fadd_32ns_32ns_32_5_full_dsp_1_U14/ce_r_reg' into 'fadd_32ns_32ns_32_5_full_dsp_1_U11/ce_r_reg' [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/3e98/hdl/verilog/mmult_wrapper_fadd_32ns_32ns_32_5_full_dsp_1.v:50]
+INFO: [Synth 8-4471] merging register 'fadd_32ns_32ns_32_5_full_dsp_1_U15/ce_r_reg' into 'fadd_32ns_32ns_32_5_full_dsp_1_U11/ce_r_reg' [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/3e98/hdl/verilog/mmult_wrapper_fadd_32ns_32ns_32_5_full_dsp_1.v:50]
+INFO: [Synth 8-4471] merging register 'fadd_32ns_32ns_32_5_full_dsp_1_U16/ce_r_reg' into 'fadd_32ns_32ns_32_5_full_dsp_1_U11/ce_r_reg' [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/3e98/hdl/verilog/mmult_wrapper_fadd_32ns_32ns_32_5_full_dsp_1.v:50]
+INFO: [Synth 8-4471] merging register 'fadd_32ns_32ns_32_5_full_dsp_1_U17/ce_r_reg' into 'fadd_32ns_32ns_32_5_full_dsp_1_U11/ce_r_reg' [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/3e98/hdl/verilog/mmult_wrapper_fadd_32ns_32ns_32_5_full_dsp_1.v:50]
+INFO: [Synth 8-4471] merging register 'fadd_32ns_32ns_32_5_full_dsp_1_U18/ce_r_reg' into 'fadd_32ns_32ns_32_5_full_dsp_1_U11/ce_r_reg' [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/3e98/hdl/verilog/mmult_wrapper_fadd_32ns_32ns_32_5_full_dsp_1.v:50]
+INFO: [Synth 8-4471] merging register 'fmul_32ns_32ns_32_4_max_dsp_1_U75/ce_r_reg' into 'fadd_32ns_32ns_32_5_full_dsp_1_U11/ce_r_reg' [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/3e98/hdl/verilog/mmult_wrapper_fmul_32ns_32ns_32_4_max_dsp_1.v:50]
+INFO: [Synth 8-4471] merging register 'fmul_32ns_32ns_32_4_max_dsp_1_U76/ce_r_reg' into 'fadd_32ns_32ns_32_5_full_dsp_1_U11/ce_r_reg' [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/3e98/hdl/verilog/mmult_wrapper_fmul_32ns_32ns_32_4_max_dsp_1.v:50]
+INFO: [Synth 8-4471] merging register 'fmul_32ns_32ns_32_4_max_dsp_1_U77/ce_r_reg' into 'fadd_32ns_32ns_32_5_full_dsp_1_U11/ce_r_reg' [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/3e98/hdl/verilog/mmult_wrapper_fmul_32ns_32ns_32_4_max_dsp_1.v:50]
+INFO: [Synth 8-4471] merging register 'fmul_32ns_32ns_32_4_max_dsp_1_U78/ce_r_reg' into 'fadd_32ns_32ns_32_5_full_dsp_1_U11/ce_r_reg' [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/3e98/hdl/verilog/mmult_wrapper_fmul_32ns_32ns_32_4_max_dsp_1.v:50]
+INFO: [Synth 8-4471] merging register 'fmul_32ns_32ns_32_4_max_dsp_1_U79/ce_r_reg' into 'fadd_32ns_32ns_32_5_full_dsp_1_U11/ce_r_reg' [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/3e98/hdl/verilog/mmult_wrapper_fmul_32ns_32ns_32_4_max_dsp_1.v:50]
+INFO: [Synth 8-4471] merging register 'fmul_32ns_32ns_32_4_max_dsp_1_U80/ce_r_reg' into 'fadd_32ns_32ns_32_5_full_dsp_1_U11/ce_r_reg' [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/3e98/hdl/verilog/mmult_wrapper_fmul_32ns_32ns_32_4_max_dsp_1.v:50]
+INFO: [Synth 8-4471] merging register 'fmul_32ns_32ns_32_4_max_dsp_1_U81/ce_r_reg' into 'fadd_32ns_32ns_32_5_full_dsp_1_U11/ce_r_reg' [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/3e98/hdl/verilog/mmult_wrapper_fmul_32ns_32ns_32_4_max_dsp_1.v:50]
+INFO: [Synth 8-4471] merging register 'fmul_32ns_32ns_32_4_max_dsp_1_U82/ce_r_reg' into 'fadd_32ns_32ns_32_5_full_dsp_1_U11/ce_r_reg' [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/3e98/hdl/verilog/mmult_wrapper_fmul_32ns_32ns_32_4_max_dsp_1.v:50]
+INFO: [Synth 8-6904] The RAM "mmult_wrapper__GB10/a_12_U/mmult_wrapper_a_0_ram_U/ram0_reg" of size (depth=128 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "mmult_wrapper__GB10/a_5_U/mmult_wrapper_a_0_ram_U/ram0_reg" of size (depth=128 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "mmult_wrapper__GB10/b_5_U/mmult_wrapper_a_0_ram_U/ram0_reg" of size (depth=128 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "mmult_wrapper__GB10/a_6_U/mmult_wrapper_a_0_ram_U/ram0_reg" of size (depth=128 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "mmult_wrapper__GB10/b_6_U/mmult_wrapper_a_0_ram_U/ram0_reg" of size (depth=128 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "mmult_wrapper__GB10/a_7_U/mmult_wrapper_a_0_ram_U/ram0_reg" of size (depth=128 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "mmult_wrapper__GB10/b_7_U/mmult_wrapper_a_0_ram_U/ram0_reg" of size (depth=128 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "mmult_wrapper__GB10/a_8_U/mmult_wrapper_a_0_ram_U/ram0_reg" of size (depth=128 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "mmult_wrapper__GB10/b_8_U/mmult_wrapper_a_0_ram_U/ram0_reg" of size (depth=128 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-6904] The RAM "mmult_wrapper__GB10/a_12_U/mmult_wrapper_a_0_ram_U/ram0_reg" of size (depth=128 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "mmult_wrapper__GB10/a_5_U/mmult_wrapper_a_0_ram_U/ram0_reg" of size (depth=128 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "mmult_wrapper__GB10/b_5_U/mmult_wrapper_a_0_ram_U/ram0_reg" of size (depth=128 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "mmult_wrapper__GB10/a_6_U/mmult_wrapper_a_0_ram_U/ram0_reg" of size (depth=128 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "mmult_wrapper__GB10/b_6_U/mmult_wrapper_a_0_ram_U/ram0_reg" of size (depth=128 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "mmult_wrapper__GB10/a_7_U/mmult_wrapper_a_0_ram_U/ram0_reg" of size (depth=128 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "mmult_wrapper__GB10/b_7_U/mmult_wrapper_a_0_ram_U/ram0_reg" of size (depth=128 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "mmult_wrapper__GB10/a_8_U/mmult_wrapper_a_0_ram_U/ram0_reg" of size (depth=128 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "mmult_wrapper__GB10/b_8_U/mmult_wrapper_a_0_ram_U/ram0_reg" of size (depth=128 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-3886] merging instance 'fadd_32ns_32ns_32_5_full_dsp_1_U11/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[8]' (FDE) to 'fadd_32ns_32ns_32_5_full_dsp_1_U11/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[9]'
+INFO: [Synth 8-3886] merging instance 'fadd_32ns_32ns_32_5_full_dsp_1_U12/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[8]' (FDE) to 'fadd_32ns_32ns_32_5_full_dsp_1_U12/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[9]'
+INFO: [Synth 8-3886] merging instance 'fadd_32ns_32ns_32_5_full_dsp_1_U13/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[8]' (FDE) to 'fadd_32ns_32ns_32_5_full_dsp_1_U13/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[9]'
+INFO: [Synth 8-3886] merging instance 'fadd_32ns_32ns_32_5_full_dsp_1_U14/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[8]' (FDE) to 'fadd_32ns_32ns_32_5_full_dsp_1_U14/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[9]'
+INFO: [Synth 8-3886] merging instance 'fadd_32ns_32ns_32_5_full_dsp_1_U15/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[8]' (FDE) to 'fadd_32ns_32ns_32_5_full_dsp_1_U15/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[9]'
+INFO: [Synth 8-3886] merging instance 'fadd_32ns_32ns_32_5_full_dsp_1_U16/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[8]' (FDE) to 'fadd_32ns_32ns_32_5_full_dsp_1_U16/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[9]'
+INFO: [Synth 8-3886] merging instance 'fadd_32ns_32ns_32_5_full_dsp_1_U17/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[8]' (FDE) to 'fadd_32ns_32ns_32_5_full_dsp_1_U17/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[9]'
+INFO: [Synth 8-3886] merging instance 'fadd_32ns_32ns_32_5_full_dsp_1_U18/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[8]' (FDE) to 'fadd_32ns_32ns_32_5_full_dsp_1_U18/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[9]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\fadd_32ns_32ns_32_5_full_dsp_1_U11/ce_r_reg )
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_11_viv__23.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_11_viv__23.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_11_viv__24.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_11_viv__24.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_11_viv__25.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_11_viv__25.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_11_viv__26.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_11_viv__26.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_11_viv__27.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_11_viv__27.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_11_viv__28.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_11_viv__28.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_11_viv__29.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_11_viv__29.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_11_viv__30.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_11_viv__30.
+INFO: [Synth 8-3936] Found unconnected internal register 'ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/EXP_OFF.LRG_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '9' to '8' bits. [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/7468/hdl/xbip_pipe_v3_0_vh_rfs.vhd:368]
+INFO: [Synth 8-3936] Found unconnected internal register 'ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/EXP_OFF.LRG_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '9' to '8' bits. [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/7468/hdl/xbip_pipe_v3_0_vh_rfs.vhd:368]
+INFO: [Synth 8-3936] Found unconnected internal register 'ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/EXP_OFF.LRG_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '9' to '8' bits. [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/7468/hdl/xbip_pipe_v3_0_vh_rfs.vhd:368]
+INFO: [Synth 8-3936] Found unconnected internal register 'ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/EXP_OFF.LRG_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '9' to '8' bits. [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/7468/hdl/xbip_pipe_v3_0_vh_rfs.vhd:368]
+INFO: [Synth 8-4471] merging register 'fmul_32ns_32ns_32_4_max_dsp_1_U89/ce_r_reg' into 'fmul_32ns_32ns_32_4_max_dsp_1_U90/ce_r_reg' [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/3e98/hdl/verilog/mmult_wrapper_fmul_32ns_32ns_32_4_max_dsp_1.v:50]
+INFO: [Synth 8-4471] merging register 'fmul_32ns_32ns_32_4_max_dsp_1_U84/ce_r_reg' into 'fmul_32ns_32ns_32_4_max_dsp_1_U90/ce_r_reg' [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/3e98/hdl/verilog/mmult_wrapper_fmul_32ns_32ns_32_4_max_dsp_1.v:50]
+INFO: [Synth 8-4471] merging register 'fmul_32ns_32ns_32_4_max_dsp_1_U83/ce_r_reg' into 'fmul_32ns_32ns_32_4_max_dsp_1_U90/ce_r_reg' [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/3e98/hdl/verilog/mmult_wrapper_fmul_32ns_32ns_32_4_max_dsp_1.v:50]
+INFO: [Synth 8-4471] merging register 'fadd_32ns_32ns_32_5_full_dsp_1_U26/ce_r_reg' into 'fmul_32ns_32ns_32_4_max_dsp_1_U90/ce_r_reg' [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/3e98/hdl/verilog/mmult_wrapper_fadd_32ns_32ns_32_5_full_dsp_1.v:50]
+INFO: [Synth 8-4471] merging register 'fadd_32ns_32ns_32_5_full_dsp_1_U25/ce_r_reg' into 'fmul_32ns_32ns_32_4_max_dsp_1_U90/ce_r_reg' [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/3e98/hdl/verilog/mmult_wrapper_fadd_32ns_32ns_32_5_full_dsp_1.v:50]
+INFO: [Synth 8-4471] merging register 'fadd_32ns_32ns_32_5_full_dsp_1_U20/ce_r_reg' into 'fmul_32ns_32ns_32_4_max_dsp_1_U90/ce_r_reg' [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/3e98/hdl/verilog/mmult_wrapper_fadd_32ns_32ns_32_5_full_dsp_1.v:50]
+INFO: [Synth 8-4471] merging register 'fadd_32ns_32ns_32_5_full_dsp_1_U19/ce_r_reg' into 'fmul_32ns_32ns_32_4_max_dsp_1_U90/ce_r_reg' [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/3e98/hdl/verilog/mmult_wrapper_fadd_32ns_32ns_32_5_full_dsp_1.v:50]
+INFO: [Synth 8-6904] The RAM "mmult_wrapper__GB11/b_12_U/mmult_wrapper_a_0_ram_U/ram0_reg" of size (depth=128 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "mmult_wrapper__GB11/a_9_U/mmult_wrapper_a_0_ram_U/ram0_reg" of size (depth=128 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "mmult_wrapper__GB11/b_9_U/mmult_wrapper_a_0_ram_U/ram0_reg" of size (depth=128 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "mmult_wrapper__GB11/b_12_U/mmult_wrapper_a_0_ram_U/ram0_reg" of size (depth=128 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "mmult_wrapper__GB11/a_9_U/mmult_wrapper_a_0_ram_U/ram0_reg" of size (depth=128 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "mmult_wrapper__GB11/b_9_U/mmult_wrapper_a_0_ram_U/ram0_reg" of size (depth=128 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-3886] merging instance 'fadd_32ns_32ns_32_5_full_dsp_1_U19/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[8]' (FDE) to 'fadd_32ns_32ns_32_5_full_dsp_1_U19/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[9]'
+INFO: [Synth 8-3886] merging instance 'fadd_32ns_32ns_32_5_full_dsp_1_U25/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[8]' (FDE) to 'fadd_32ns_32ns_32_5_full_dsp_1_U25/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[9]'
+INFO: [Synth 8-3886] merging instance 'fadd_32ns_32ns_32_5_full_dsp_1_U20/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[8]' (FDE) to 'fadd_32ns_32ns_32_5_full_dsp_1_U20/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[9]'
+INFO: [Synth 8-3886] merging instance 'fadd_32ns_32ns_32_5_full_dsp_1_U26/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[8]' (FDE) to 'fadd_32ns_32ns_32_5_full_dsp_1_U26/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[9]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\fmul_32ns_32ns_32_4_max_dsp_1_U90/ce_r_reg )
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_11_viv__31.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_11_viv__31.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_11_viv__32.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_11_viv__32.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_11_viv__33.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_11_viv__33.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_11_viv__34.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_11_viv__34.
+INFO: [Synth 8-3936] Found unconnected internal register 'ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/EXP_OFF.LRG_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '9' to '8' bits. [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/7468/hdl/xbip_pipe_v3_0_vh_rfs.vhd:368]
+INFO: [Synth 8-3936] Found unconnected internal register 'ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/EXP_OFF.LRG_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '9' to '8' bits. [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/7468/hdl/xbip_pipe_v3_0_vh_rfs.vhd:368]
+INFO: [Synth 8-3936] Found unconnected internal register 'ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/EXP_OFF.LRG_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '9' to '8' bits. [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/7468/hdl/xbip_pipe_v3_0_vh_rfs.vhd:368]
+INFO: [Synth 8-3936] Found unconnected internal register 'ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/EXP_OFF.LRG_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '9' to '8' bits. [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/7468/hdl/xbip_pipe_v3_0_vh_rfs.vhd:368]
+INFO: [Synth 8-3936] Found unconnected internal register 'ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/EXP_OFF.LRG_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '9' to '8' bits. [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/7468/hdl/xbip_pipe_v3_0_vh_rfs.vhd:368]
+INFO: [Synth 8-3936] Found unconnected internal register 'ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/EXP_OFF.LRG_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '9' to '8' bits. [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/7468/hdl/xbip_pipe_v3_0_vh_rfs.vhd:368]
+INFO: [Synth 8-3936] Found unconnected internal register 'ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/EXP_OFF.LRG_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '9' to '8' bits. [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/7468/hdl/xbip_pipe_v3_0_vh_rfs.vhd:368]
+INFO: [Synth 8-3936] Found unconnected internal register 'ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/EXP_OFF.LRG_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '9' to '8' bits. [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/7468/hdl/xbip_pipe_v3_0_vh_rfs.vhd:368]
+INFO: [Synth 8-3936] Found unconnected internal register 'ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/EXP_OFF.LRG_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '9' to '8' bits. [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/7468/hdl/xbip_pipe_v3_0_vh_rfs.vhd:368]
+INFO: [Synth 8-3936] Found unconnected internal register 'ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/EXP_OFF.LRG_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '9' to '8' bits. [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/7468/hdl/xbip_pipe_v3_0_vh_rfs.vhd:368]
+INFO: [Synth 8-4471] merging register 'fadd_32ns_32ns_32_5_full_dsp_1_U2/ce_r_reg' into 'fadd_32ns_32ns_32_5_full_dsp_1_U1/ce_r_reg' [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/3e98/hdl/verilog/mmult_wrapper_fadd_32ns_32ns_32_5_full_dsp_1.v:50]
+INFO: [Synth 8-4471] merging register 'fadd_32ns_32ns_32_5_full_dsp_1_U3/ce_r_reg' into 'fadd_32ns_32ns_32_5_full_dsp_1_U1/ce_r_reg' [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/3e98/hdl/verilog/mmult_wrapper_fadd_32ns_32ns_32_5_full_dsp_1.v:50]
+INFO: [Synth 8-4471] merging register 'fadd_32ns_32ns_32_5_full_dsp_1_U4/ce_r_reg' into 'fadd_32ns_32ns_32_5_full_dsp_1_U1/ce_r_reg' [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/3e98/hdl/verilog/mmult_wrapper_fadd_32ns_32ns_32_5_full_dsp_1.v:50]
+INFO: [Synth 8-4471] merging register 'fadd_32ns_32ns_32_5_full_dsp_1_U5/ce_r_reg' into 'fadd_32ns_32ns_32_5_full_dsp_1_U1/ce_r_reg' [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/3e98/hdl/verilog/mmult_wrapper_fadd_32ns_32ns_32_5_full_dsp_1.v:50]
+INFO: [Synth 8-4471] merging register 'fadd_32ns_32ns_32_5_full_dsp_1_U6/ce_r_reg' into 'fadd_32ns_32ns_32_5_full_dsp_1_U1/ce_r_reg' [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/3e98/hdl/verilog/mmult_wrapper_fadd_32ns_32ns_32_5_full_dsp_1.v:50]
+INFO: [Synth 8-4471] merging register 'fadd_32ns_32ns_32_5_full_dsp_1_U7/ce_r_reg' into 'fadd_32ns_32ns_32_5_full_dsp_1_U1/ce_r_reg' [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/3e98/hdl/verilog/mmult_wrapper_fadd_32ns_32ns_32_5_full_dsp_1.v:50]
+INFO: [Synth 8-4471] merging register 'fadd_32ns_32ns_32_5_full_dsp_1_U8/ce_r_reg' into 'fadd_32ns_32ns_32_5_full_dsp_1_U1/ce_r_reg' [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/3e98/hdl/verilog/mmult_wrapper_fadd_32ns_32ns_32_5_full_dsp_1.v:50]
+INFO: [Synth 8-4471] merging register 'fadd_32ns_32ns_32_5_full_dsp_1_U9/ce_r_reg' into 'fadd_32ns_32ns_32_5_full_dsp_1_U1/ce_r_reg' [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/3e98/hdl/verilog/mmult_wrapper_fadd_32ns_32ns_32_5_full_dsp_1.v:50]
+INFO: [Synth 8-4471] merging register 'fadd_32ns_32ns_32_5_full_dsp_1_U10/ce_r_reg' into 'fadd_32ns_32ns_32_5_full_dsp_1_U1/ce_r_reg' [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/3e98/hdl/verilog/mmult_wrapper_fadd_32ns_32ns_32_5_full_dsp_1.v:50]
+INFO: [Synth 8-4471] merging register 'fmul_32ns_32ns_32_4_max_dsp_1_U65/ce_r_reg' into 'fadd_32ns_32ns_32_5_full_dsp_1_U1/ce_r_reg' [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/3e98/hdl/verilog/mmult_wrapper_fmul_32ns_32ns_32_4_max_dsp_1.v:50]
+INFO: [Synth 8-4471] merging register 'fmul_32ns_32ns_32_4_max_dsp_1_U66/ce_r_reg' into 'fadd_32ns_32ns_32_5_full_dsp_1_U1/ce_r_reg' [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/3e98/hdl/verilog/mmult_wrapper_fmul_32ns_32ns_32_4_max_dsp_1.v:50]
+INFO: [Synth 8-4471] merging register 'fmul_32ns_32ns_32_4_max_dsp_1_U67/ce_r_reg' into 'fadd_32ns_32ns_32_5_full_dsp_1_U1/ce_r_reg' [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/3e98/hdl/verilog/mmult_wrapper_fmul_32ns_32ns_32_4_max_dsp_1.v:50]
+INFO: [Synth 8-4471] merging register 'fmul_32ns_32ns_32_4_max_dsp_1_U68/ce_r_reg' into 'fadd_32ns_32ns_32_5_full_dsp_1_U1/ce_r_reg' [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/3e98/hdl/verilog/mmult_wrapper_fmul_32ns_32ns_32_4_max_dsp_1.v:50]
+INFO: [Synth 8-4471] merging register 'fmul_32ns_32ns_32_4_max_dsp_1_U69/ce_r_reg' into 'fadd_32ns_32ns_32_5_full_dsp_1_U1/ce_r_reg' [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/3e98/hdl/verilog/mmult_wrapper_fmul_32ns_32ns_32_4_max_dsp_1.v:50]
+INFO: [Synth 8-4471] merging register 'fmul_32ns_32ns_32_4_max_dsp_1_U88/ce_r_reg' into 'fadd_32ns_32ns_32_5_full_dsp_1_U1/ce_r_reg' [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/3e98/hdl/verilog/mmult_wrapper_fmul_32ns_32ns_32_4_max_dsp_1.v:50]
+INFO: [Synth 8-4471] merging register 'fmul_32ns_32ns_32_4_max_dsp_1_U87/ce_r_reg' into 'fadd_32ns_32ns_32_5_full_dsp_1_U1/ce_r_reg' [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/3e98/hdl/verilog/mmult_wrapper_fmul_32ns_32ns_32_4_max_dsp_1.v:50]
+INFO: [Synth 8-4471] merging register 'fmul_32ns_32ns_32_4_max_dsp_1_U74/ce_r_reg' into 'fadd_32ns_32ns_32_5_full_dsp_1_U1/ce_r_reg' [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/3e98/hdl/verilog/mmult_wrapper_fmul_32ns_32ns_32_4_max_dsp_1.v:50]
+INFO: [Synth 8-4471] merging register 'fmul_32ns_32ns_32_4_max_dsp_1_U73/ce_r_reg' into 'fadd_32ns_32ns_32_5_full_dsp_1_U1/ce_r_reg' [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/3e98/hdl/verilog/mmult_wrapper_fmul_32ns_32ns_32_4_max_dsp_1.v:50]
+INFO: [Synth 8-4471] merging register 'fmul_32ns_32ns_32_4_max_dsp_1_U72/ce_r_reg' into 'fadd_32ns_32ns_32_5_full_dsp_1_U1/ce_r_reg' [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/3e98/hdl/verilog/mmult_wrapper_fmul_32ns_32ns_32_4_max_dsp_1.v:50]
+INFO: [Synth 8-4471] merging register 'fmul_32ns_32ns_32_4_max_dsp_1_U71/ce_r_reg' into 'fadd_32ns_32ns_32_5_full_dsp_1_U1/ce_r_reg' [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/3e98/hdl/verilog/mmult_wrapper_fmul_32ns_32ns_32_4_max_dsp_1.v:50]
+INFO: [Synth 8-4471] merging register 'fmul_32ns_32ns_32_4_max_dsp_1_U70/ce_r_reg' into 'fadd_32ns_32ns_32_5_full_dsp_1_U1/ce_r_reg' [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/3e98/hdl/verilog/mmult_wrapper_fmul_32ns_32ns_32_4_max_dsp_1.v:50]
+INFO: [Synth 8-6904] The RAM "mmult_wrapper__GB12/a_0_U/mmult_wrapper_a_0_ram_U/ram0_reg" of size (depth=128 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "mmult_wrapper__GB12/b_0_U/mmult_wrapper_a_0_ram_U/ram0_reg" of size (depth=128 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "mmult_wrapper__GB12/a_1_U/mmult_wrapper_a_0_ram_U/ram0_reg" of size (depth=128 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "mmult_wrapper__GB12/b_1_U/mmult_wrapper_a_0_ram_U/ram0_reg" of size (depth=128 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "mmult_wrapper__GB12/a_2_U/mmult_wrapper_a_0_ram_U/ram0_reg" of size (depth=128 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "mmult_wrapper__GB12/b_2_U/mmult_wrapper_a_0_ram_U/ram0_reg" of size (depth=128 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "mmult_wrapper__GB12/a_11_U/mmult_wrapper_a_0_ram_U/ram0_reg" of size (depth=128 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "mmult_wrapper__GB12/b_11_U/mmult_wrapper_a_0_ram_U/ram0_reg" of size (depth=128 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "mmult_wrapper__GB12/a_4_U/mmult_wrapper_a_0_ram_U/ram0_reg" of size (depth=128 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "mmult_wrapper__GB12/b_4_U/mmult_wrapper_a_0_ram_U/ram0_reg" of size (depth=128 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "mmult_wrapper__GB12/a_3_U/mmult_wrapper_a_0_ram_U/ram0_reg" of size (depth=128 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "mmult_wrapper__GB12/b_3_U/mmult_wrapper_a_0_ram_U/ram0_reg" of size (depth=128 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "mmult_wrapper__GB12/a_0_U/mmult_wrapper_a_0_ram_U/ram0_reg" of size (depth=128 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "mmult_wrapper__GB12/b_0_U/mmult_wrapper_a_0_ram_U/ram0_reg" of size (depth=128 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "mmult_wrapper__GB12/a_1_U/mmult_wrapper_a_0_ram_U/ram0_reg" of size (depth=128 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "mmult_wrapper__GB12/b_1_U/mmult_wrapper_a_0_ram_U/ram0_reg" of size (depth=128 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "mmult_wrapper__GB12/a_2_U/mmult_wrapper_a_0_ram_U/ram0_reg" of size (depth=128 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "mmult_wrapper__GB12/b_2_U/mmult_wrapper_a_0_ram_U/ram0_reg" of size (depth=128 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "mmult_wrapper__GB12/a_11_U/mmult_wrapper_a_0_ram_U/ram0_reg" of size (depth=128 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "mmult_wrapper__GB12/b_11_U/mmult_wrapper_a_0_ram_U/ram0_reg" of size (depth=128 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "mmult_wrapper__GB12/a_4_U/mmult_wrapper_a_0_ram_U/ram0_reg" of size (depth=128 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "mmult_wrapper__GB12/b_4_U/mmult_wrapper_a_0_ram_U/ram0_reg" of size (depth=128 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "mmult_wrapper__GB12/a_3_U/mmult_wrapper_a_0_ram_U/ram0_reg" of size (depth=128 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "mmult_wrapper__GB12/b_3_U/mmult_wrapper_a_0_ram_U/ram0_reg" of size (depth=128 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\fadd_32ns_32ns_32_5_full_dsp_1_U1/din1_buf1_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\fadd_32ns_32ns_32_5_full_dsp_1_U1/din1_buf1_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\fadd_32ns_32ns_32_5_full_dsp_1_U1/din1_buf1_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\fadd_32ns_32ns_32_5_full_dsp_1_U1/din1_buf1_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\fadd_32ns_32ns_32_5_full_dsp_1_U1/din1_buf1_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\fadd_32ns_32ns_32_5_full_dsp_1_U1/din1_buf1_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\fadd_32ns_32ns_32_5_full_dsp_1_U1/din1_buf1_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\fadd_32ns_32ns_32_5_full_dsp_1_U1/din1_buf1_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\fadd_32ns_32ns_32_5_full_dsp_1_U1/din1_buf1_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\fadd_32ns_32ns_32_5_full_dsp_1_U1/din1_buf1_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\fadd_32ns_32ns_32_5_full_dsp_1_U1/din1_buf1_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\fadd_32ns_32ns_32_5_full_dsp_1_U1/din1_buf1_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\fadd_32ns_32ns_32_5_full_dsp_1_U1/din1_buf1_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\fadd_32ns_32ns_32_5_full_dsp_1_U1/din1_buf1_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\fadd_32ns_32ns_32_5_full_dsp_1_U1/din1_buf1_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\fadd_32ns_32ns_32_5_full_dsp_1_U1/din1_buf1_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\fadd_32ns_32ns_32_5_full_dsp_1_U1/din1_buf1_reg[16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\fadd_32ns_32ns_32_5_full_dsp_1_U1/din1_buf1_reg[17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\fadd_32ns_32ns_32_5_full_dsp_1_U1/din1_buf1_reg[18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\fadd_32ns_32ns_32_5_full_dsp_1_U1/din1_buf1_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\fadd_32ns_32ns_32_5_full_dsp_1_U1/din1_buf1_reg[20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\fadd_32ns_32ns_32_5_full_dsp_1_U1/din1_buf1_reg[21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\fadd_32ns_32ns_32_5_full_dsp_1_U1/din1_buf1_reg[22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\fadd_32ns_32ns_32_5_full_dsp_1_U1/din1_buf1_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\fadd_32ns_32ns_32_5_full_dsp_1_U1/din1_buf1_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\fadd_32ns_32ns_32_5_full_dsp_1_U1/din1_buf1_reg[24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\fadd_32ns_32ns_32_5_full_dsp_1_U1/din1_buf1_reg[25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\fadd_32ns_32ns_32_5_full_dsp_1_U1/din1_buf1_reg[26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\fadd_32ns_32ns_32_5_full_dsp_1_U1/din1_buf1_reg[27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\fadd_32ns_32ns_32_5_full_dsp_1_U1/din1_buf1_reg[28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\fadd_32ns_32ns_32_5_full_dsp_1_U1/din1_buf1_reg[29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\fadd_32ns_32ns_32_5_full_dsp_1_U1/din1_buf1_reg[30] )
+INFO: [Synth 8-3886] merging instance 'fadd_32ns_32ns_32_5_full_dsp_1_U1/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[8]' (FDE) to 'fadd_32ns_32ns_32_5_full_dsp_1_U1/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[9]'
+INFO: [Synth 8-3886] merging instance 'fadd_32ns_32ns_32_5_full_dsp_1_U2/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[8]' (FDE) to 'fadd_32ns_32ns_32_5_full_dsp_1_U2/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[9]'
+INFO: [Synth 8-3886] merging instance 'fadd_32ns_32ns_32_5_full_dsp_1_U3/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[8]' (FDE) to 'fadd_32ns_32ns_32_5_full_dsp_1_U3/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[9]'
+INFO: [Synth 8-3886] merging instance 'fadd_32ns_32ns_32_5_full_dsp_1_U4/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[8]' (FDE) to 'fadd_32ns_32ns_32_5_full_dsp_1_U4/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[9]'
+INFO: [Synth 8-3886] merging instance 'fadd_32ns_32ns_32_5_full_dsp_1_U5/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[8]' (FDE) to 'fadd_32ns_32ns_32_5_full_dsp_1_U5/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[9]'
+INFO: [Synth 8-3886] merging instance 'fadd_32ns_32ns_32_5_full_dsp_1_U6/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[8]' (FDE) to 'fadd_32ns_32ns_32_5_full_dsp_1_U6/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[9]'
+INFO: [Synth 8-3886] merging instance 'fadd_32ns_32ns_32_5_full_dsp_1_U7/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[8]' (FDE) to 'fadd_32ns_32ns_32_5_full_dsp_1_U7/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[9]'
+INFO: [Synth 8-3886] merging instance 'fadd_32ns_32ns_32_5_full_dsp_1_U8/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[8]' (FDE) to 'fadd_32ns_32ns_32_5_full_dsp_1_U8/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[9]'
+INFO: [Synth 8-3886] merging instance 'fadd_32ns_32ns_32_5_full_dsp_1_U9/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[8]' (FDE) to 'fadd_32ns_32ns_32_5_full_dsp_1_U9/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[9]'
+INFO: [Synth 8-3886] merging instance 'fadd_32ns_32ns_32_5_full_dsp_1_U10/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[8]' (FDE) to 'fadd_32ns_32ns_32_5_full_dsp_1_U10/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[9]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\fadd_32ns_32ns_32_5_full_dsp_1_U1/ce_r_reg )
+INFO: [Synth 8-3886] merging instance 'fadd_32ns_32ns_32_5_full_dsp_1_U1/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/B_SIGN_DELAY/i_pipe/opt_has_pipe.first_q_reg[0]' (FDE) to 'fadd_32ns_32ns_32_5_full_dsp_1_U1/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/B_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[7]'
+INFO: [Synth 8-3886] merging instance 'fadd_32ns_32ns_32_5_full_dsp_1_U1/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/A_SIGN_DELAY/i_pipe/opt_has_pipe.first_q_reg[0]' (FDE) to 'fadd_32ns_32ns_32_5_full_dsp_1_U1/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/SUB_DELAY/i_pipe/opt_has_pipe.first_q_reg[0]'
+INFO: [Synth 8-3886] merging instance 'fadd_32ns_32ns_32_5_full_dsp_1_U1/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/B_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[7]' (FDE) to 'fadd_32ns_32ns_32_5_full_dsp_1_U1/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/B_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[6]'
+INFO: [Synth 8-3886] merging instance 'fadd_32ns_32ns_32_5_full_dsp_1_U1/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/B_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[6]' (FDE) to 'fadd_32ns_32ns_32_5_full_dsp_1_U1/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/B_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[5]'
+INFO: [Synth 8-3886] merging instance 'fadd_32ns_32ns_32_5_full_dsp_1_U1/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/B_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[5]' (FDE) to 'fadd_32ns_32ns_32_5_full_dsp_1_U1/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/B_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[4]'
+INFO: [Synth 8-3886] merging instance 'fadd_32ns_32ns_32_5_full_dsp_1_U1/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/B_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[4]' (FDE) to 'fadd_32ns_32ns_32_5_full_dsp_1_U1/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/B_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[3]'
+INFO: [Synth 8-3886] merging instance 'fadd_32ns_32ns_32_5_full_dsp_1_U1/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/B_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[3]' (FDE) to 'fadd_32ns_32ns_32_5_full_dsp_1_U1/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/B_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[2]'
+INFO: [Synth 8-3886] merging instance 'fadd_32ns_32ns_32_5_full_dsp_1_U1/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/B_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[2]' (FDE) to 'fadd_32ns_32ns_32_5_full_dsp_1_U1/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/B_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[1]'
+INFO: [Synth 8-3886] merging instance 'fadd_32ns_32ns_32_5_full_dsp_1_U1/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/B_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[1]' (FDE) to 'fadd_32ns_32ns_32_5_full_dsp_1_U1/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/B_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[0]'
+INFO: [Synth 8-3886] merging instance 'fadd_32ns_32ns_32_5_full_dsp_1_U1/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/B_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[0]' (FDE) to 'fadd_32ns_32ns_32_5_full_dsp_1_U1/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[22]'
+INFO: [Synth 8-3886] merging instance 'fadd_32ns_32ns_32_5_full_dsp_1_U1/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[14]' (FDE) to 'fadd_32ns_32ns_32_5_full_dsp_1_U1/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[22]'
+INFO: [Synth 8-3886] merging instance 'fadd_32ns_32ns_32_5_full_dsp_1_U1/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[15]' (FDE) to 'fadd_32ns_32ns_32_5_full_dsp_1_U1/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[22]'
+INFO: [Synth 8-3886] merging instance 'fadd_32ns_32ns_32_5_full_dsp_1_U1/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[16]' (FDE) to 'fadd_32ns_32ns_32_5_full_dsp_1_U1/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[22]'
+INFO: [Synth 8-3886] merging instance 'fadd_32ns_32ns_32_5_full_dsp_1_U1/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[17]' (FDE) to 'fadd_32ns_32ns_32_5_full_dsp_1_U1/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[22]'
+INFO: [Synth 8-3886] merging instance 'fadd_32ns_32ns_32_5_full_dsp_1_U1/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[18]' (FDE) to 'fadd_32ns_32ns_32_5_full_dsp_1_U1/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[22]'
+INFO: [Synth 8-3886] merging instance 'fadd_32ns_32ns_32_5_full_dsp_1_U1/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[19]' (FDE) to 'fadd_32ns_32ns_32_5_full_dsp_1_U1/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[22]'
+INFO: [Synth 8-3886] merging instance 'fadd_32ns_32ns_32_5_full_dsp_1_U1/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[20]' (FDE) to 'fadd_32ns_32ns_32_5_full_dsp_1_U1/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[22]'
+INFO: [Synth 8-3886] merging instance 'fadd_32ns_32ns_32_5_full_dsp_1_U1/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[21]' (FDE) to 'fadd_32ns_32ns_32_5_full_dsp_1_U1/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[22]'
+INFO: [Synth 8-3886] merging instance 'fadd_32ns_32ns_32_5_full_dsp_1_U1/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[22]' (FDE) to 'fadd_32ns_32ns_32_5_full_dsp_1_U1/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[13]'
+INFO: [Synth 8-3886] merging instance 'fadd_32ns_32ns_32_5_full_dsp_1_U1/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[1]' (FDE) to 'fadd_32ns_32ns_32_5_full_dsp_1_U1/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[13]'
+INFO: [Synth 8-3886] merging instance 'fadd_32ns_32ns_32_5_full_dsp_1_U1/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[0]' (FDE) to 'fadd_32ns_32ns_32_5_full_dsp_1_U1/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[13]'
+INFO: [Synth 8-3886] merging instance 'fadd_32ns_32ns_32_5_full_dsp_1_U1/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[3]' (FDE) to 'fadd_32ns_32ns_32_5_full_dsp_1_U1/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[13]'
+INFO: [Synth 8-3886] merging instance 'fadd_32ns_32ns_32_5_full_dsp_1_U1/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[2]' (FDE) to 'fadd_32ns_32ns_32_5_full_dsp_1_U1/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[13]'
+INFO: [Synth 8-3886] merging instance 'fadd_32ns_32ns_32_5_full_dsp_1_U1/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[5]' (FDE) to 'fadd_32ns_32ns_32_5_full_dsp_1_U1/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[13]'
+INFO: [Synth 8-3886] merging instance 'fadd_32ns_32ns_32_5_full_dsp_1_U1/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[4]' (FDE) to 'fadd_32ns_32ns_32_5_full_dsp_1_U1/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[13]'
+INFO: [Synth 8-3886] merging instance 'fadd_32ns_32ns_32_5_full_dsp_1_U1/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[7]' (FDE) to 'fadd_32ns_32ns_32_5_full_dsp_1_U1/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[13]'
+INFO: [Synth 8-3886] merging instance 'fadd_32ns_32ns_32_5_full_dsp_1_U1/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[6]' (FDE) to 'fadd_32ns_32ns_32_5_full_dsp_1_U1/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[13]'
+INFO: [Synth 8-3886] merging instance 'fadd_32ns_32ns_32_5_full_dsp_1_U1/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[9]' (FDE) to 'fadd_32ns_32ns_32_5_full_dsp_1_U1/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[13]'
+INFO: [Synth 8-3886] merging instance 'fadd_32ns_32ns_32_5_full_dsp_1_U1/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[8]' (FDE) to 'fadd_32ns_32ns_32_5_full_dsp_1_U1/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[13]'
+INFO: [Synth 8-3886] merging instance 'fadd_32ns_32ns_32_5_full_dsp_1_U1/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[11]' (FDE) to 'fadd_32ns_32ns_32_5_full_dsp_1_U1/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[13]'
+INFO: [Synth 8-3886] merging instance 'fadd_32ns_32ns_32_5_full_dsp_1_U1/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[10]' (FDE) to 'fadd_32ns_32ns_32_5_full_dsp_1_U1/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[13]'
+INFO: [Synth 8-3886] merging instance 'fadd_32ns_32ns_32_5_full_dsp_1_U1/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[13]' (FDE) to 'fadd_32ns_32ns_32_5_full_dsp_1_U1/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[12]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\fadd_32ns_32ns_32_5_full_dsp_1_U1/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst /i_synth/\ADDSUB_OP.ADDSUB/DSP.OP/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[12] )
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_11_viv__35.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_11_viv__35.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_11_viv__36.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_11_viv__36.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_11_viv__37.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_11_viv__37.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_11_viv__38.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_11_viv__38.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_11_viv__39.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_11_viv__39.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_11_viv__40.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_11_viv__40.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_11_viv__41.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_11_viv__41.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_11_viv__42.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_11_viv__42.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_11_viv__43.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_11_viv__43.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_11_viv__44.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_11_viv__44.
+INFO: [Synth 8-3936] Found unconnected internal register 'ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/EXP_OFF.LRG_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '9' to '8' bits. [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/7468/hdl/xbip_pipe_v3_0_vh_rfs.vhd:368]
+INFO: [Synth 8-3936] Found unconnected internal register 'ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/EXP_OFF.LRG_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '9' to '8' bits. [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/7468/hdl/xbip_pipe_v3_0_vh_rfs.vhd:368]
+INFO: [Synth 8-3936] Found unconnected internal register 'ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/EXP_OFF.LRG_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '9' to '8' bits. [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/7468/hdl/xbip_pipe_v3_0_vh_rfs.vhd:368]
+INFO: [Synth 8-3936] Found unconnected internal register 'ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/EXP_OFF.LRG_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '9' to '8' bits. [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/7468/hdl/xbip_pipe_v3_0_vh_rfs.vhd:368]
+INFO: [Synth 8-4471] merging register 'fadd_32ns_32ns_32_5_full_dsp_1_U23/ce_r_reg' into 'fadd_32ns_32ns_32_5_full_dsp_1_U24/ce_r_reg' [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/3e98/hdl/verilog/mmult_wrapper_fadd_32ns_32ns_32_5_full_dsp_1.v:50]
+INFO: [Synth 8-4471] merging register 'fadd_32ns_32ns_32_5_full_dsp_1_U22/ce_r_reg' into 'fadd_32ns_32ns_32_5_full_dsp_1_U24/ce_r_reg' [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/3e98/hdl/verilog/mmult_wrapper_fadd_32ns_32ns_32_5_full_dsp_1.v:50]
+INFO: [Synth 8-4471] merging register 'fadd_32ns_32ns_32_5_full_dsp_1_U21/ce_r_reg' into 'fadd_32ns_32ns_32_5_full_dsp_1_U24/ce_r_reg' [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/3e98/hdl/verilog/mmult_wrapper_fadd_32ns_32ns_32_5_full_dsp_1.v:50]
+INFO: [Synth 8-3886] merging instance 'fadd_32ns_32ns_32_5_full_dsp_1_U21/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[8]' (FDE) to 'fadd_32ns_32ns_32_5_full_dsp_1_U21/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[9]'
+INFO: [Synth 8-3886] merging instance 'fadd_32ns_32ns_32_5_full_dsp_1_U22/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[8]' (FDE) to 'fadd_32ns_32ns_32_5_full_dsp_1_U22/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[9]'
+INFO: [Synth 8-3886] merging instance 'fadd_32ns_32ns_32_5_full_dsp_1_U23/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[8]' (FDE) to 'fadd_32ns_32ns_32_5_full_dsp_1_U23/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[9]'
+INFO: [Synth 8-3886] merging instance 'fadd_32ns_32ns_32_5_full_dsp_1_U24/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[8]' (FDE) to 'fadd_32ns_32ns_32_5_full_dsp_1_U24/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[9]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\fadd_32ns_32ns_32_5_full_dsp_1_U24/ce_r_reg )
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_11_viv__45.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_11_viv__45.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_11_viv__46.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_11_viv__46.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_11_viv__47.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_11_viv__47.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_11_viv__48.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_11_viv__48.
+INFO: [Synth 8-3936] Found unconnected internal register 'ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/EXP_OFF.LRG_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '9' to '8' bits. [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/7468/hdl/xbip_pipe_v3_0_vh_rfs.vhd:368]
+INFO: [Synth 8-3936] Found unconnected internal register 'ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/EXP_OFF.LRG_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '9' to '8' bits. [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/7468/hdl/xbip_pipe_v3_0_vh_rfs.vhd:368]
+INFO: [Synth 8-3936] Found unconnected internal register 'ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/EXP_OFF.LRG_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '9' to '8' bits. [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/7468/hdl/xbip_pipe_v3_0_vh_rfs.vhd:368]
+INFO: [Synth 8-4471] merging register 'fmul_32ns_32ns_32_4_max_dsp_1_U93/ce_r_reg' into 'fmul_32ns_32ns_32_4_max_dsp_1_U94/ce_r_reg' [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/3e98/hdl/verilog/mmult_wrapper_fmul_32ns_32ns_32_4_max_dsp_1.v:50]
+INFO: [Synth 8-4471] merging register 'fmul_32ns_32ns_32_4_max_dsp_1_U92/ce_r_reg' into 'fmul_32ns_32ns_32_4_max_dsp_1_U94/ce_r_reg' [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/3e98/hdl/verilog/mmult_wrapper_fmul_32ns_32ns_32_4_max_dsp_1.v:50]
+INFO: [Synth 8-4471] merging register 'fmul_32ns_32ns_32_4_max_dsp_1_U91/ce_r_reg' into 'fmul_32ns_32ns_32_4_max_dsp_1_U94/ce_r_reg' [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/3e98/hdl/verilog/mmult_wrapper_fmul_32ns_32ns_32_4_max_dsp_1.v:50]
+INFO: [Synth 8-4471] merging register 'fmul_32ns_32ns_32_4_max_dsp_1_U86/ce_r_reg' into 'fmul_32ns_32ns_32_4_max_dsp_1_U94/ce_r_reg' [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/3e98/hdl/verilog/mmult_wrapper_fmul_32ns_32ns_32_4_max_dsp_1.v:50]
+INFO: [Synth 8-4471] merging register 'fmul_32ns_32ns_32_4_max_dsp_1_U85/ce_r_reg' into 'fmul_32ns_32ns_32_4_max_dsp_1_U94/ce_r_reg' [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/3e98/hdl/verilog/mmult_wrapper_fmul_32ns_32ns_32_4_max_dsp_1.v:50]
+INFO: [Synth 8-4471] merging register 'fadd_32ns_32ns_32_5_full_dsp_1_U29/ce_r_reg' into 'fmul_32ns_32ns_32_4_max_dsp_1_U94/ce_r_reg' [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/3e98/hdl/verilog/mmult_wrapper_fadd_32ns_32ns_32_5_full_dsp_1.v:50]
+INFO: [Synth 8-4471] merging register 'fadd_32ns_32ns_32_5_full_dsp_1_U28/ce_r_reg' into 'fmul_32ns_32ns_32_4_max_dsp_1_U94/ce_r_reg' [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/3e98/hdl/verilog/mmult_wrapper_fadd_32ns_32ns_32_5_full_dsp_1.v:50]
+INFO: [Synth 8-4471] merging register 'fadd_32ns_32ns_32_5_full_dsp_1_U27/ce_r_reg' into 'fmul_32ns_32ns_32_4_max_dsp_1_U94/ce_r_reg' [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/3e98/hdl/verilog/mmult_wrapper_fadd_32ns_32ns_32_5_full_dsp_1.v:50]
+INFO: [Synth 8-6904] The RAM "mmult_wrapper__GB14/a_14_U/mmult_wrapper_a_0_ram_U/ram0_reg" of size (depth=128 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "mmult_wrapper__GB14/b_14_U/mmult_wrapper_a_0_ram_U/ram0_reg" of size (depth=128 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "mmult_wrapper__GB14/a_13_U/mmult_wrapper_a_0_ram_U/ram0_reg" of size (depth=128 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "mmult_wrapper__GB14/b_13_U/mmult_wrapper_a_0_ram_U/ram0_reg" of size (depth=128 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "mmult_wrapper__GB14/a_10_U/mmult_wrapper_a_0_ram_U/ram0_reg" of size (depth=128 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "mmult_wrapper__GB14/b_10_U/mmult_wrapper_a_0_ram_U/ram0_reg" of size (depth=128 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "mmult_wrapper__GB14/a_14_U/mmult_wrapper_a_0_ram_U/ram0_reg" of size (depth=128 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Common 17-14] Message 'Synth 8-6904' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3886] merging instance 'fadd_32ns_32ns_32_5_full_dsp_1_U27/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[8]' (FDE) to 'fadd_32ns_32ns_32_5_full_dsp_1_U27/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[9]'
+INFO: [Synth 8-3886] merging instance 'fadd_32ns_32ns_32_5_full_dsp_1_U28/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[8]' (FDE) to 'fadd_32ns_32ns_32_5_full_dsp_1_U28/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[9]'
+INFO: [Synth 8-3886] merging instance 'fadd_32ns_32ns_32_5_full_dsp_1_U29/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[8]' (FDE) to 'fadd_32ns_32ns_32_5_full_dsp_1_U29/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[9]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\fmul_32ns_32ns_32_4_max_dsp_1_U94/ce_r_reg )
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_11_viv__49.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_11_viv__49.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_11_viv__50.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_11_viv__50.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3936] Found unconnected internal register 'ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/EXP_OFF.LRG_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '9' to '8' bits. [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/7468/hdl/xbip_pipe_v3_0_vh_rfs.vhd:368]
+INFO: [Synth 8-3936] Found unconnected internal register 'ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/EXP_OFF.LRG_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '9' to '8' bits. [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/7468/hdl/xbip_pipe_v3_0_vh_rfs.vhd:368]
+INFO: [Synth 8-3936] Found unconnected internal register 'ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/EXP_OFF.LRG_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '9' to '8' bits. [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/7468/hdl/xbip_pipe_v3_0_vh_rfs.vhd:368]
+INFO: [Synth 8-3936] Found unconnected internal register 'ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/EXP_OFF.LRG_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '9' to '8' bits. [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/7468/hdl/xbip_pipe_v3_0_vh_rfs.vhd:368]
+INFO: [Synth 8-3936] Found unconnected internal register 'ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/EXP_OFF.LRG_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '9' to '8' bits. [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/7468/hdl/xbip_pipe_v3_0_vh_rfs.vhd:368]
+INFO: [Synth 8-4471] merging register 'fmul_32ns_32ns_32_4_max_dsp_1_U97/ce_r_reg' into 'fmul_32ns_32ns_32_4_max_dsp_1_U98/ce_r_reg' [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/3e98/hdl/verilog/mmult_wrapper_fmul_32ns_32ns_32_4_max_dsp_1.v:50]
+INFO: [Synth 8-4471] merging register 'fmul_32ns_32ns_32_4_max_dsp_1_U96/ce_r_reg' into 'fmul_32ns_32ns_32_4_max_dsp_1_U98/ce_r_reg' [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/3e98/hdl/verilog/mmult_wrapper_fmul_32ns_32ns_32_4_max_dsp_1.v:50]
+INFO: [Synth 8-4471] merging register 'fmul_32ns_32ns_32_4_max_dsp_1_U95/ce_r_reg' into 'fmul_32ns_32ns_32_4_max_dsp_1_U98/ce_r_reg' [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/3e98/hdl/verilog/mmult_wrapper_fmul_32ns_32ns_32_4_max_dsp_1.v:50]
+INFO: [Synth 8-4471] merging register 'fadd_32ns_32ns_32_5_full_dsp_1_U34/ce_r_reg' into 'fmul_32ns_32ns_32_4_max_dsp_1_U98/ce_r_reg' [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/3e98/hdl/verilog/mmult_wrapper_fadd_32ns_32ns_32_5_full_dsp_1.v:50]
+INFO: [Synth 8-4471] merging register 'fadd_32ns_32ns_32_5_full_dsp_1_U33/ce_r_reg' into 'fmul_32ns_32ns_32_4_max_dsp_1_U98/ce_r_reg' [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/3e98/hdl/verilog/mmult_wrapper_fadd_32ns_32ns_32_5_full_dsp_1.v:50]
+INFO: [Synth 8-4471] merging register 'fadd_32ns_32ns_32_5_full_dsp_1_U32/ce_r_reg' into 'fmul_32ns_32ns_32_4_max_dsp_1_U98/ce_r_reg' [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/3e98/hdl/verilog/mmult_wrapper_fadd_32ns_32ns_32_5_full_dsp_1.v:50]
+INFO: [Synth 8-4471] merging register 'fadd_32ns_32ns_32_5_full_dsp_1_U31/ce_r_reg' into 'fmul_32ns_32ns_32_4_max_dsp_1_U98/ce_r_reg' [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/3e98/hdl/verilog/mmult_wrapper_fadd_32ns_32ns_32_5_full_dsp_1.v:50]
+INFO: [Synth 8-4471] merging register 'fadd_32ns_32ns_32_5_full_dsp_1_U30/ce_r_reg' into 'fmul_32ns_32ns_32_4_max_dsp_1_U98/ce_r_reg' [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/3e98/hdl/verilog/mmult_wrapper_fadd_32ns_32ns_32_5_full_dsp_1.v:50]
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3886] merging instance 'fadd_32ns_32ns_32_5_full_dsp_1_U30/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[8]' (FDE) to 'fadd_32ns_32ns_32_5_full_dsp_1_U30/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[9]'
+INFO: [Synth 8-3886] merging instance 'fadd_32ns_32ns_32_5_full_dsp_1_U31/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[8]' (FDE) to 'fadd_32ns_32ns_32_5_full_dsp_1_U31/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[9]'
+INFO: [Synth 8-3886] merging instance 'fadd_32ns_32ns_32_5_full_dsp_1_U32/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[8]' (FDE) to 'fadd_32ns_32ns_32_5_full_dsp_1_U32/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[9]'
+INFO: [Synth 8-3886] merging instance 'fadd_32ns_32ns_32_5_full_dsp_1_U33/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[8]' (FDE) to 'fadd_32ns_32ns_32_5_full_dsp_1_U33/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[9]'
+INFO: [Synth 8-3886] merging instance 'fadd_32ns_32ns_32_5_full_dsp_1_U34/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[8]' (FDE) to 'fadd_32ns_32ns_32_5_full_dsp_1_U34/mmult_wrapper_ap_fadd_3_full_dsp_32_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[9]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\fmul_32ns_32ns_32_4_max_dsp_1_U98/ce_r_reg )
+INFO: [Synth 8-3936] Found unconnected internal register 'ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/EXP_OFF.LRG_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '9' to '8' bits. [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/7468/hdl/xbip_pipe_v3_0_vh_rfs.vhd:368]
+INFO: [Synth 8-3936] Found unconnected internal register 'ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/EXP_OFF.LRG_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '9' to '8' bits. [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/7468/hdl/xbip_pipe_v3_0_vh_rfs.vhd:368]
+INFO: [Synth 8-4471] merging register 'fmul_32ns_32ns_32_4_max_dsp_1_U127/ce_r_reg' into 'fmul_32ns_32ns_32_4_max_dsp_1_U128/ce_r_reg' [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/3e98/hdl/verilog/mmult_wrapper_fmul_32ns_32ns_32_4_max_dsp_1.v:50]
+INFO: [Synth 8-4471] merging register 'fmul_32ns_32ns_32_4_max_dsp_1_U126/ce_r_reg' into 'fmul_32ns_32ns_32_4_max_dsp_1_U128/ce_r_reg' [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/3e98/hdl/verilog/mmult_wrapper_fmul_32ns_32ns_32_4_max_dsp_1.v:50]
+INFO: [Synth 8-4471] merging register 'fmul_32ns_32ns_32_4_max_dsp_1_U125/ce_r_reg' into 'fmul_32ns_32ns_32_4_max_dsp_1_U128/ce_r_reg' [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/3e98/hdl/verilog/mmult_wrapper_fmul_32ns_32ns_32_4_max_dsp_1.v:50]
+INFO: [Synth 8-4471] merging register 'fmul_32ns_32ns_32_4_max_dsp_1_U124/ce_r_reg' into 'fmul_32ns_32ns_32_4_max_dsp_1_U128/ce_r_reg' [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/3e98/hdl/verilog/mmult_wrapper_fmul_32ns_32ns_32_4_max_dsp_1.v:50]
+INFO: [Common 17-14] Message 'Synth 8-4471' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\fmul_32ns_32ns_32_4_max_dsp_1_U128/ce_r_reg )
+INFO: [Synth 8-3936] Found unconnected internal register 'ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/EXP_OFF.LRG_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '9' to '8' bits. [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/7468/hdl/xbip_pipe_v3_0_vh_rfs.vhd:368]
+INFO: [Synth 8-3936] Found unconnected internal register 'ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/EXP_OFF.LRG_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '9' to '8' bits. [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/7468/hdl/xbip_pipe_v3_0_vh_rfs.vhd:368]
+INFO: [Synth 8-3936] Found unconnected internal register 'ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/EXP_OFF.LRG_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '9' to '8' bits. [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/7468/hdl/xbip_pipe_v3_0_vh_rfs.vhd:368]
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\fadd_32ns_32ns_32_5_full_dsp_1_U58/ce_r_reg )
+INFO: [Synth 8-3936] Found unconnected internal register 'ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/EXP_OFF.LRG_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '9' to '8' bits. [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/7468/hdl/xbip_pipe_v3_0_vh_rfs.vhd:368]
+INFO: [Synth 8-5779] Default cascade height of 2 will be used for BRAM '"mmult_wrapper__GB20/out_U/mmult_wrapper_out_ram_U/ram_reg"'.
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 18 for RAM "mmult_wrapper__GB20/out_U/mmult_wrapper_out_ram_U/ram_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 9 for RAM "mmult_wrapper__GB20/out_U/mmult_wrapper_out_ram_U/ram_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 5 for RAM "mmult_wrapper__GB20/out_U/mmult_wrapper_out_ram_U/ram_reg"
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\fadd_32ns_32ns_32_5_full_dsp_1_U57/ce_r_reg )
+INFO: [Synth 8-3936] Found unconnected internal register 'ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/EXP_OFF.LRG_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '9' to '8' bits. [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/7468/hdl/xbip_pipe_v3_0_vh_rfs.vhd:368]
+INFO: [Synth 8-3936] Found unconnected internal register 'ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/EXP_OFF.LRG_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '9' to '8' bits. [/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.gen/sources_1/bd/design_1/ipshared/7468/hdl/xbip_pipe_v3_0_vh_rfs.vhd:368]
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\fadd_32ns_32ns_32_5_full_dsp_1_U64/ce_r_reg )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:04:06 ; elapsed = 00:03:56 . Memory (MB): peak = 4289.266 ; gain = 1684.957 ; free physical = 9465 ; free virtual = 68345
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:04:49 ; elapsed = 00:05:04 . Memory (MB): peak = 4289.266 ; gain = 1684.957 ; free physical = 8779 ; free virtual = 67803
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5556] The block RAM "inst/out_U/mmult_wrapper_out_ram_U/ram_reg" may be mapped as a cascade chain, because it is not timing critical.
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 18 for RAM "inst/out_U/mmult_wrapper_out_ram_U/ram_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 9 for RAM "inst/out_U/mmult_wrapper_out_ram_U/ram_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 5 for RAM "inst/out_U/mmult_wrapper_out_ram_U/ram_reg"
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:06:12 ; elapsed = 00:06:28 . Memory (MB): peak = 4289.266 ; gain = 1684.957 ; free physical = 8555 ; free virtual = 67579
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance inst/i_3_27/out_U/mmult_wrapper_out_ram_U/ram_reg_bram_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/i_3_27/out_U/mmult_wrapper_out_ram_U/ram_reg_bram_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/i_3_27/out_U/mmult_wrapper_out_ram_U/ram_reg_bram_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:07:16 ; elapsed = 00:08:15 . Memory (MB): peak = 4289.266 ; gain = 1684.957 ; free physical = 6105 ; free virtual = 65153
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance inst/out_U/mmult_wrapper_out_ram_U/ram_reg_bram_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/out_U/mmult_wrapper_out_ram_U/ram_reg_bram_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/out_U/mmult_wrapper_out_ram_U/ram_reg_bram_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:07:57 ; elapsed = 00:08:57 . Memory (MB): peak = 4351.480 ; gain = 1747.172 ; free physical = 6063 ; free virtual = 65262
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:07:57 ; elapsed = 00:08:57 . Memory (MB): peak = 4351.480 ; gain = 1747.172 ; free physical = 6063 ; free virtual = 65262
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:08:08 ; elapsed = 00:09:09 . Memory (MB): peak = 4351.480 ; gain = 1747.172 ; free physical = 6052 ; free virtual = 65251
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:08:09 ; elapsed = 00:09:09 . Memory (MB): peak = 4351.480 ; gain = 1747.172 ; free physical = 6052 ; free virtual = 65251
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:08:12 ; elapsed = 00:09:12 . Memory (MB): peak = 4351.480 ; gain = 1747.172 ; free physical = 6057 ; free virtual = 65255
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:08:13 ; elapsed = 00:09:13 . Memory (MB): peak = 4351.480 ; gain = 1747.172 ; free physical = 6057 ; free virtual = 65255
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |CARRY8    |     9|
+|2     |DSP48E1   |   320|
+|3     |LUT1      |   164|
+|4     |LUT2      |  2398|
+|5     |LUT3      |  6358|
+|6     |LUT4      |  4456|
+|7     |LUT5      |  4800|
+|8     |LUT6      |  5824|
+|9     |MUXCY     |  4736|
+|10    |MUXF7     |     1|
+|11    |RAM128X1D |  2048|
+|12    |RAMB36E2  |     4|
+|15    |SRL16E    |   160|
+|16    |SRLC32E   | 11108|
+|17    |XORCY     |  1600|
+|18    |FDE       |   192|
+|19    |FDRE      | 27217|
+|20    |FDSE      |     1|
++------+----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:08:13 ; elapsed = 00:09:13 . Memory (MB): peak = 4351.480 ; gain = 1747.172 ; free physical = 6057 ; free virtual = 65255
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 400 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:06:37 ; elapsed = 00:08:16 . Memory (MB): peak = 4355.387 ; gain = 516.750 ; free physical = 13588 ; free virtual = 72787
+Synthesis Optimization Complete : Time (s): cpu = 00:08:19 ; elapsed = 00:09:19 . Memory (MB): peak = 4355.387 ; gain = 1751.078 ; free physical = 13634 ; free virtual = 72787
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 4355.387 ; gain = 0.000 ; free physical = 13561 ; free virtual = 72714
+INFO: [Netlist 29-17] Analyzing 8906 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 5 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.04 . Memory (MB): peak = 4399.504 ; gain = 0.000 ; free physical = 13441 ; free virtual = 72594
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 3392 instances were transformed.
+  (CARRY4) => CARRY8: 832 instances
+  DSP48E1 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 320 instances
+  FDE => FDRE: 192 instances
+  RAM128X1D => RAM128X1D (MUXF7(x2), RAMD64E(x4)): 2048 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+607 Infos, 100 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:08:59 ; elapsed = 00:10:09 . Memory (MB): peak = 4399.504 ; gain = 1991.055 ; free physical = 13709 ; free virtual = 72862
+INFO: [Common 17-1381] The checkpoint '/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.runs/design_1_mmult_wrapper_0_0_synth_1/design_1_mmult_wrapper_0_0.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:22 ; elapsed = 00:00:16 . Memory (MB): peak = 4431.523 ; gain = 32.020 ; free physical = 13687 ; free virtual = 72862
+write_vhdl: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 4431.523 ; gain = 0.000 ; free physical = 13586 ; free virtual = 72858
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_mmult_wrapper_0_0, cache-ID = cf5d0e0453072271
+INFO: [Coretcl 2-1174] Renamed 6590 cell refs.
+INFO: [Common 17-1381] The checkpoint '/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult.runs/design_1_mmult_wrapper_0_0_synth_1/design_1_mmult_wrapper_0_0.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:23 ; elapsed = 00:00:17 . Memory (MB): peak = 4431.523 ; gain = 0.000 ; free physical = 13568 ; free virtual = 72863
+INFO: [runtcl-4] Executing : report_utilization -file design_1_mmult_wrapper_0_0_utilization_synth.rpt -pb design_1_mmult_wrapper_0_0_utilization_synth.pb
+write_vhdl: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 4431.523 ; gain = 0.000 ; free physical = 13446 ; free virtual = 72858
+INFO: [Common 17-206] Exiting Vivado at Fri Mar 18 22:28:03 2022...

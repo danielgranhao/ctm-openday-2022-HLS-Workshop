@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item key="sdx.custom.platform.repository.locations" value="/home/daniel/Documents/ctm_openday/Vivado/matrix_mult/matrix_mult/export/matrix_mult;/home/daniel/Documents/git/ctm-openday-2022/Vivado/matrix_mult/matrix_mult_platform/export/matrix_mult_platform"/>
+</section>

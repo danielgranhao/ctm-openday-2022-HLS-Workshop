@@ -1,0 +1,25 @@
+18:57:47 **** Incremental Build of configuration Debug for project matrix_mult_notimer_feup_app ****
+make all 
+Building file: ../src/main.c
+Invoking: ARM v8 gcc compiler
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I/home/daniel/Documents/git/ctm-openday-2022/Vivado/matrix_mult/matrix_mult_notimer_platform_feup/export/matrix_mult_notimer_platform_feup/sw/matrix_mult_notimer_platform_feup/standalone_domain/bspinclude/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:20:
+/home/daniel/Documents/git/ctm-openday-2022/Vivado/matrix_mult/matrix_mult_notimer_platform_feup/export/matrix_mult_notimer_platform_feup/sw/matrix_mult_notimer_platform_feup/standalone_domain/bspinclude/include/xtime_l.h:65:9: note: #pragma message: For the sleep routines, Global timer is being used
+   65 | #pragma message ("For the sleep routines, Global timer is being used")
+      |         ^~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: matrix_mult_notimer_feup_app.elf
+Invoking: ARM v8 gcc linker
+aarch64-none-elf-gcc -Wl,-T -Wl,../src/lscript.ld -L/home/daniel/Documents/git/ctm-openday-2022/Vivado/matrix_mult/matrix_mult_notimer_platform_feup/export/matrix_mult_notimer_platform_feup/sw/matrix_mult_notimer_platform_feup/standalone_domain/bsplib/lib -o "matrix_mult_notimer_feup_app.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: matrix_mult_notimer_feup_app.elf
+ 
+Invoking: ARM v8 Print Size
+aarch64-none-elf-size matrix_mult_notimer_feup_app.elf  |tee "matrix_mult_notimer_feup_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 116352	   4648	 998516	1119516	 11151c	matrix_mult_notimer_feup_app.elf
+Finished building: matrix_mult_notimer_feup_app.elf.size
+ 
+
+18:57:48 Build Finished (took 328ms)
+

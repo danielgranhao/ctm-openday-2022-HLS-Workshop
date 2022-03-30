@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="FileSystemImportWizard">
+		<item key="WizardFileSystemResourceImportPage1.STORE_OVERWRITE_EXISTING_RESOURCES_ID" value="false"/>
+		<item key="WizardFileSystemResourceImportPage1.STORE_CREATE_CONTAINER_STRUCTURE_ID" value="false"/>
+		<list key="WizardFileSystemResourceImportPage1.STORE_SOURCE_NAMES_ID">
+			<item value="/home/daniel/Documents/git/ctm-openday-2022/Vivado/matrix_mult/matrix_mult_notimer_feup_app/src"/>
+			<item value="/home/daniel/Documents/git/ctm-openday-2022/Vivado/matrix_mult/matrix_mult_fix_app/src"/>
+			<item value="/home/daniel/Documents/git/ctm-openday-2022/Vivado/matrix_mult/matrix_mult_app/src"/>
+			<item value="/home/daniel/Documents/git/lstm/Vivado/lstm_ultra96_hfp_v2_hfreq_quad_07_01_2022/lstm_app/src"/>
+		</list>
+	</section>
+</section>

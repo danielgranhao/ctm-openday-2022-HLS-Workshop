@@ -1,0 +1,39 @@
+11:35:35 **** Incremental Build of configuration Debug for project matrix_mult_fix_app ****
+make all 
+Building file: ../src/main.c
+Invoking: ARM v8 gcc compiler
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I/home/daniel/Documents/git/ctm-openday-2022/Vivado/matrix_mult/matrix_mult_platform/export/matrix_mult_platform/sw/matrix_mult_platform/standalone_domain/bspinclude/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:20:
+/home/daniel/Documents/git/ctm-openday-2022/Vivado/matrix_mult/matrix_mult_platform/export/matrix_mult_platform/sw/matrix_mult_platform/standalone_domain/bspinclude/include/xtime_l.h:65:9: note: #pragma message: For the sleep routines, Global timer is being used
+   65 | #pragma message ("For the sleep routines, Global timer is being used")
+      |         ^~~~~~~
+In file included from ../src/main.c:32:
+/home/daniel/Documents/git/ctm-openday-2022/Vivado/matrix_mult/matrix_mult_platform/export/matrix_mult_platform/sw/matrix_mult_platform/standalone_domain/bspinclude/include/xbasic_types.h:98:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+   98 | #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+      |  ^~~~~~~
+/home/daniel/Documents/git/ctm-openday-2022/Vivado/matrix_mult/matrix_mult_platform/export/matrix_mult_platform/sw/matrix_mult_platform/standalone_domain/bspinclude/include/xbasic_types.h:99:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+   99 | #warning  Please refer the Standalone BSP UG647 for further details
+      |  ^~~~~~~
+../src/main.c: In function 'main':
+../src/main.c:195:4: warning: unused variable 'matMult_hw' [-Wunused-variable]
+  195 |  T matMult_hw[DIM][DIM];
+      |    ^~~~~~~~~~
+../src/main.c:188:6: warning: unused variable 'Status' [-Wunused-variable]
+  188 |  u32 Status;
+      |      ^~~~~~
+Finished building: ../src/main.c
+ 
+Building target: matrix_mult_fix_app.elf
+Invoking: ARM v8 gcc linker
+aarch64-none-elf-gcc -Wl,-T -Wl,../src/lscript.ld -L/home/daniel/Documents/git/ctm-openday-2022/Vivado/matrix_mult/matrix_mult_platform/export/matrix_mult_platform/sw/matrix_mult_platform/standalone_domain/bsplib/lib -o "matrix_mult_fix_app.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: matrix_mult_fix_app.elf
+ 
+Invoking: ARM v8 Print Size
+aarch64-none-elf-size matrix_mult_fix_app.elf  |tee "matrix_mult_fix_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 105728	   4552	  20804	 131084	  2000c	matrix_mult_fix_app.elf
+Finished building: matrix_mult_fix_app.elf.size
+ 
+
+11:35:35 Build Finished (took 218ms)
+

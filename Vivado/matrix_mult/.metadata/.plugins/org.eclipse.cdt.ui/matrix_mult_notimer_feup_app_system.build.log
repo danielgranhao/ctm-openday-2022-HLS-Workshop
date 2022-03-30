@@ -1,0 +1,10 @@
+18:57:48 **** Incremental Build of configuration Debug for project matrix_mult_notimer_feup_app_system ****
+make all 
+Generating bif file for the system project
+Executing command '::scw::generate_bif -xpfm /home/daniel/Documents/git/ctm-openday-2022/Vivado/matrix_mult/matrix_mult_notimer_platform_feup/export/matrix_mult_notimer_platform_feup/matrix_mult_notimer_platform_feup.xpfm -domains standalone_domain -bifpath /home/daniel/Documents/git/ctm-openday-2022/Vivado/matrix_mult/matrix_mult_notimer_feup_app_system/Debug/system.bif' on XSCT
+sdcard_gen --xpfm /home/daniel/Documents/git/ctm-openday-2022/Vivado/matrix_mult/matrix_mult_notimer_platform_feup/export/matrix_mult_notimer_platform_feup/matrix_mult_notimer_platform_feup.xpfm --sys_config matrix_mult_notimer_platform_feup --bif /home/daniel/Documents/git/ctm-openday-2022/Vivado/matrix_mult/matrix_mult_notimer_feup_app_system/Debug/system.bif --bitstream /home/daniel/Documents/git/ctm-openday-2022/Vivado/matrix_mult/matrix_mult_notimer_feup_app/_ide/bitstream/design_1_wrapper_notimer_debug_smallburst_noACP.bit --elf /home/daniel/Documents/git/ctm-openday-2022/Vivado/matrix_mult/matrix_mult_notimer_feup_app/Debug/matrix_mult_notimer_feup_app.elf,psu_cortexa53_0
+creating BOOT.BIN using /home/daniel/Documents/git/ctm-openday-2022/Vivado/matrix_mult/matrix_mult_notimer_feup_app/_ide/bitstream/design_1_wrapper_notimer_debug_smallburst_noACP.bit
+Running /eda/Xilinx/Vitis/2020.2/bin/bootgen -arch zynqmp -image /home/daniel/Documents/git/ctm-openday-2022/Vivado/matrix_mult/matrix_mult_notimer_feup_app_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN
+
+18:57:56 Build Finished (took 7s.542ms)
+
